@@ -1,0 +1,37 @@
+[
+    {
+        "question_id": "e0000001-0000-0000-0000-0000000000a1",
+        "question_content": "下列关于 Java 中 final 关键字的说法，正确的是",
+        "full_score": 5,
+        "teacher_score": 5,
+        "teacher_comment": "单选题，答案 A 正确，给满分"
+    },
+    {
+        "question_id": "e0000001-0000-0000-0000-0000000000a2",
+        "question_content": "下列关于 Java 集合的说法正确的是（多选）",
+        "full_score": 6,
+        "teacher_score": 6,
+        "teacher_comment": "多选题，答案 ACD 正确，给满分"
+    },
+    {
+        "question_id": "e0000001-0000-0000-0000-0000000000a3",
+        "question_content": "判断：Java 中 int 类型的成员变量默认值是 0",
+        "full_score": 4,
+        "teacher_score": 4,
+        "teacher_comment": "判断题，答案正确，给满分"
+    },
+    {
+        "question_id": "e0000001-0000-0000-0000-0000000000a4",
+        "question_content": "请解释 Spring IOC 的概念及其核心作用",
+        "full_score": 10,
+        "teacher_score": 8,
+        "teacher_comment": "正确说明了控制反转思想，也提到容器管理对象，但未展开降低耦合的具体好处，扣 2 分"
+    },
+    {
+        "question_id": "e0000001-0000-0000-0000-0000000000a5",
+        "question_content": "编写一个 Java 方法 fib(int n)，计算斐波那契数列第 N 项",
+        "full_score": 10,
+        "teacher_score": 8,
+        "teacher_comment": "递归实现正确，测试用例通过，但未处理 n 为负数的边界情况，扣 2 分"
+    }
+]

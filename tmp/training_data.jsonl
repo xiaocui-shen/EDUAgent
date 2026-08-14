@@ -1,0 +1,2124 @@
+{"text": "什么是过拟合", "label": "general"}
+{"text": "过拟合和欠拟合有什么区别", "label": "general"}
+{"text": "正则化是什么意思", "label": "general"}
+{"text": "L1 和 L2 正则化有什么区别", "label": "general"}
+{"text": "什么是交叉验证", "label": "general"}
+{"text": "K折交叉验证怎么实现", "label": "general"}
+{"text": "偏差和方差的 trade-off 怎么理解", "label": "general"}
+{"text": "损失函数是什么", "label": "general"}
+{"text": "梯度下降原理是什么", "label": "general"}
+{"text": "随机梯度下降和批量梯度下降有什么区别", "label": "general"}
+{"text": "什么是学习率", "label": "general"}
+{"text": "学习率太大或太小会怎样", "label": "general"}
+{"text": "特征工程包括哪些步骤", "label": "general"}
+{"text": "特征归一化为什么重要", "label": "general"}
+{"text": "MinMaxScaler 和 StandardScaler 有什么区别", "label": "general"}
+{"text": "什么是 PCA", "label": "general"}
+{"text": "PCA 降维的原理是什么", "label": "general"}
+{"text": "逻辑回归和线性回归有什么区别", "label": "general"}
+{"text": "SVM 的核函数是什么意思", "label": "general"}
+{"text": "决策树怎么剪枝", "label": "general"}
+{"text": "随机森林和 GBDT 有什么区别", "label": "general"}
+{"text": "XGBoost 的原理是什么", "label": "general"}
+{"text": "集成学习中 Bagging 和 Boosting 有什么区别", "label": "general"}
+{"text": "kmeans 聚类算法怎么实现", "label": "general"}
+{"text": "kmeans 中 k 怎么选取", "label": "general"}
+{"text": "什么是 ROC 曲线", "label": "general"}
+{"text": "AUC 值怎么理解", "label": "general"}
+{"text": "精确率和召回率有什么区别", "label": "general"}
+{"text": "F1-score 是什么", "label": "general"}
+{"text": "什么是混淆矩阵", "label": "general"}
+{"text": "类别不平衡问题怎么处理", "label": "general"}
+{"text": "SMOTE 过采样原理是什么", "label": "general"}
+{"text": "贝叶斯分类器原理是什么", "label": "general"}
+{"text": "朴素贝叶斯中独立性假设是什么意思", "label": "general"}
+{"text": "KNN 算法原理是什么", "label": "general"}
+{"text": "机器学习模型调参有哪些方法", "label": "general"}
+{"text": "网格搜索和随机搜索哪个更好", "label": "general"}
+{"text": "特征选择有哪些方法", "label": "general"}
+{"text": "什么是特征重要性", "label": "general"}
+{"text": "数据集划分一般怎么划分", "label": "general"}
+{"text": "什么是神经网络", "label": "general"}
+{"text": "全连接层的作用是什么", "label": "general"}
+{"text": "激活函数为什么重要", "label": "general"}
+{"text": "ReLU 和 sigmoid 有什么区别", "label": "general"}
+{"text": "梯度消失问题是怎么产生的", "label": "general"}
+{"text": "梯度爆炸怎么解决", "label": "general"}
+{"text": "batch normalization 原理是什么", "label": "general"}
+{"text": "dropout 怎么防止过拟合", "label": "general"}
+{"text": "反向传播算法是怎么工作的", "label": "general"}
+{"text": "权重初始化为什么重要", "label": "general"}
+{"text": "Xavier 初始化和 He 初始化的区别", "label": "general"}
+{"text": "Adam 优化器原理是什么", "label": "general"}
+{"text": "momentum 优化器是什么", "label": "general"}
+{"text": "什么是学习率衰减", "label": "general"}
+{"text": "early stopping 是什么", "label": "general"}
+{"text": "深度学习中 epoch 和 iteration 有什么区别", "label": "general"}
+{"text": "mini-batch 大小如何选择", "label": "general"}
+{"text": "什么是残差连接", "label": "general"}
+{"text": "skip connection 解决了什么问题", "label": "general"}
+{"text": "什么是迁移学习", "label": "general"}
+{"text": "pytorch 里的 tensor 怎么创建", "label": "general"}
+{"text": "torch.Tensor 和 torch.tensor 有什么区别", "label": "general"}
+{"text": "pytorch 怎么定义一个自定义 Dataset", "label": "general"}
+{"text": "DataLoader 的 num_workers 参数是什么意思", "label": "general"}
+{"text": "pytorch 里的 backward 怎么触发的", "label": "general"}
+{"text": "autograd 的原理是什么", "label": "general"}
+{"text": "requires_grad 是什么", "label": "general"}
+{"text": "pytorch 里 model.train() 和 model.eval() 有什么区别", "label": "general"}
+{"text": "torch.no_grad() 有什么用", "label": "general"}
+{"text": "怎么在 pytorch 里保存和加载模型", "label": "general"}
+{"text": "state_dict 是什么", "label": "general"}
+{"text": "pytorch 里怎么迁移到 GPU", "label": "general"}
+{"text": "cuda 和 cpu 张量不能直接运算怎么解决", "label": "general"}
+{"text": "pytorch 里 view 和 reshape 有什么区别", "label": "general"}
+{"text": "squeeze 和 unsqueeze 怎么用", "label": "general"}
+{"text": "pytorch 里 nn.Module 怎么继承", "label": "general"}
+{"text": "forward 方法怎么写", "label": "general"}
+{"text": "loss.backward() 之后必须做什么", "label": "general"}
+{"text": "optimizer.zero_grad() 为什么必须调用", "label": "general"}
+{"text": "pytorch 的 collate_fn 怎么自定义", "label": "general"}
+{"text": "pytorch 里怎么做 embedding", "label": "general"}
+{"text": "nn.Embedding 的参数怎么设置", "label": "general"}
+{"text": "pytorch 里的 pack_padded_sequence 干什么用", "label": "general"}
+{"text": "torch.cat 和 torch.stack 有什么区别", "label": "general"}
+{"text": "pytorch hook 是什么", "label": "general"}
+{"text": "Transformer 的注意力机制是什么", "label": "general"}
+{"text": "self-attention 的计算过程是什么", "label": "general"}
+{"text": "多头注意力的作用是什么", "label": "general"}
+{"text": "Transformer 中位置编码是什么", "label": "general"}
+{"text": "为什么 Transformer 需要位置编码", "label": "general"}
+{"text": "encoder 和 decoder 在 Transformer 里分别做什么", "label": "general"}
+{"text": "BERT 的预训练任务是什么", "label": "general"}
+{"text": "BERT 中 MLM 是什么意思", "label": "general"}
+{"text": "NSP 任务是什么", "label": "general"}
+{"text": "BERT 的输入格式是什么", "label": "general"}
+{"text": "[CLS] token 有什么用", "label": "general"}
+{"text": "BERT 和 GPT 有什么区别", "label": "general"}
+{"text": "Transformer 比 RNN 好在哪里", "label": "general"}
+{"text": "attention mask 是什么", "label": "general"}
+{"text": "什么是 fine-tuning", "label": "general"}
+{"text": "BERT 做文本分类怎么做", "label": "general"}
+{"text": "tokenizer 的作用是什么", "label": "general"}
+{"text": "WordPiece 和 BPE 有什么区别", "label": "general"}
+{"text": "什么是大模型微调", "label": "general"}
+{"text": "LoRA 原理是什么", "label": "general"}
+{"text": "RNN 的基本结构是什么", "label": "general"}
+{"text": "LSTM 为什么能解决梯度消失", "label": "general"}
+{"text": "LSTM 的三个门分别是什么", "label": "general"}
+{"text": "遗忘门的作用是什么", "label": "general"}
+{"text": "GRU 和 LSTM 有什么区别", "label": "general"}
+{"text": "双向 LSTM 怎么理解", "label": "general"}
+{"text": "seq2seq 模型是什么", "label": "general"}
+{"text": "attention mechanism 在 seq2seq 里怎么用", "label": "general"}
+{"text": "RNN 的 hidden state 是什么", "label": "general"}
+{"text": "时间序列预测用什么模型好", "label": "general"}
+{"text": "卷积操作的原理是什么", "label": "general"}
+{"text": "池化层有什么作用", "label": "general"}
+{"text": "最大池化和平均池化区别是什么", "label": "general"}
+{"text": "CNN 中 padding 是什么", "label": "general"}
+{"text": "stride 参数是什么意思", "label": "general"}
+{"text": "感受野是什么", "label": "general"}
+{"text": "ResNet 的残差连接怎么工作", "label": "general"}
+{"text": "什么是 VGG 网络", "label": "general"}
+{"text": "目标检测和图像分类有什么区别", "label": "general"}
+{"text": "anchor box 是什么", "label": "general"}
+{"text": "YOLO 的原理是什么", "label": "general"}
+{"text": "图像增强有哪些方法", "label": "general"}
+{"text": "什么是 batch normalization 在 CNN 里的作用", "label": "general"}
+{"text": "深度可分离卷积是什么", "label": "general"}
+{"text": "1x1 卷积的作用是什么", "label": "general"}
+{"text": "词向量是什么", "label": "general"}
+{"text": "word2vec 原理是什么", "label": "general"}
+{"text": "CBOW 和 skip-gram 有什么区别", "label": "general"}
+{"text": "TF-IDF 是什么", "label": "general"}
+{"text": "文本分类一般怎么做", "label": "general"}
+{"text": "情感分析是什么任务", "label": "general"}
+{"text": "命名实体识别是什么", "label": "general"}
+{"text": "GAN 的原理是什么", "label": "general"}
+{"text": "生成器和判别器分别做什么", "label": "general"}
+{"text": "GAN 训练不稳定怎么解决", "label": "general"}
+{"text": "VAE 和 GAN 有什么区别", "label": "general"}
+{"text": "什么是强化学习", "label": "general"}
+{"text": "Q-learning 是什么", "label": "general"}
+{"text": "reward function 怎么设计", "label": "general"}
+{"text": "强化学习怎么入门", "label": "general"}
+{"text": "Java 里接口和抽象类有什么区别", "label": "general"}
+{"text": "Java 中 final 关键字有什么用", "label": "general"}
+{"text": "static 关键字的作用是什么", "label": "general"}
+{"text": "Java 的基本数据类型有哪些", "label": "general"}
+{"text": "装箱和拆箱是什么", "label": "general"}
+{"text": "Java 中 == 和 equals 有什么区别", "label": "general"}
+{"text": "hashCode 和 equals 的关系是什么", "label": "general"}
+{"text": "Java 里的泛型是什么", "label": "general"}
+{"text": "通配符 ? extends 和 ? super 有什么区别", "label": "general"}
+{"text": "Java 中的异常体系是什么", "label": "general"}
+{"text": "checked exception 和 unchecked exception 有什么区别", "label": "general"}
+{"text": "try-with-resources 怎么用", "label": "general"}
+{"text": "Java 8 的 lambda 表达式是什么", "label": "general"}
+{"text": "Stream API 怎么用", "label": "general"}
+{"text": "Optional 有什么用", "label": "general"}
+{"text": "Java 里的函数式接口是什么", "label": "general"}
+{"text": "方法引用怎么写", "label": "general"}
+{"text": "Java 里的内部类有哪几种", "label": "general"}
+{"text": "匿名类怎么用", "label": "general"}
+{"text": "Java 中字符串是不可变的吗", "label": "general"}
+{"text": "String StringBuilder StringBuffer 有什么区别", "label": "general"}
+{"text": "Java 里的反射机制是什么", "label": "general"}
+{"text": "反射的应用场景有哪些", "label": "general"}
+{"text": "什么是注解", "label": "general"}
+{"text": "自定义注解怎么写", "label": "general"}
+{"text": "JVM 内存结构是什么", "label": "general"}
+{"text": "堆和栈的区别是什么", "label": "general"}
+{"text": "方法区存什么", "label": "general"}
+{"text": "什么是 GC", "label": "general"}
+{"text": "垃圾回收算法有哪些", "label": "general"}
+{"text": "标记清除算法有什么缺点", "label": "general"}
+{"text": "G1 GC 的原理是什么", "label": "general"}
+{"text": "什么是 STW", "label": "general"}
+{"text": "类加载机制是什么", "label": "general"}
+{"text": "双亲委派模型是什么", "label": "general"}
+{"text": "什么是 OOM", "label": "general"}
+{"text": "如何排查内存泄漏", "label": "general"}
+{"text": "JVM 调优参数有哪些", "label": "general"}
+{"text": "-Xmx 和 -Xms 分别是什么", "label": "general"}
+{"text": "什么是 JIT 编译", "label": "general"}
+{"text": "synchronized 关键字怎么用", "label": "general"}
+{"text": "volatile 的作用是什么", "label": "general"}
+{"text": "什么是线程安全", "label": "general"}
+{"text": "Java 里有哪些锁", "label": "general"}
+{"text": "ReentrantLock 和 synchronized 有什么区别", "label": "general"}
+{"text": "什么是死锁", "label": "general"}
+{"text": "死锁怎么避免", "label": "general"}
+{"text": "ThreadLocal 是什么", "label": "general"}
+{"text": "线程池的参数有哪些", "label": "general"}
+{"text": "核心线程数和最大线程数有什么区别", "label": "general"}
+{"text": "阻塞队列有哪些实现", "label": "general"}
+{"text": "CountDownLatch 怎么用", "label": "general"}
+{"text": "CyclicBarrier 和 CountDownLatch 有什么区别", "label": "general"}
+{"text": "什么是 CAS", "label": "general"}
+{"text": "AQS 的原理是什么", "label": "general"}
+{"text": "Java 里的 happens-before 规则是什么", "label": "general"}
+{"text": "什么是内存可见性问题", "label": "general"}
+{"text": "线程的生命周期有哪些状态", "label": "general"}
+{"text": "Spring IOC 是什么", "label": "general"}
+{"text": "依赖注入有哪几种方式", "label": "general"}
+{"text": "Spring AOP 是什么", "label": "general"}
+{"text": "切面、切点、通知分别是什么", "label": "general"}
+{"text": "@Autowired 和 @Resource 有什么区别", "label": "general"}
+{"text": "Spring Bean 的作用域有哪些", "label": "general"}
+{"text": "Spring 的事务管理怎么用", "label": "general"}
+{"text": "@Transactional 注解的属性有哪些", "label": "general"}
+{"text": "事务的传播行为是什么", "label": "general"}
+{"text": "Spring MVC 的请求处理流程是什么", "label": "general"}
+{"text": "DispatcherServlet 的作用是什么", "label": "general"}
+{"text": "SpringBoot 自动配置原理是什么", "label": "general"}
+{"text": "@SpringBootApplication 包含哪些注解", "label": "general"}
+{"text": "SpringBoot 怎么读取配置文件", "label": "general"}
+{"text": "@Value 和 @ConfigurationProperties 有什么区别", "label": "general"}
+{"text": "SpringBoot 怎么集成 Redis", "label": "general"}
+{"text": "Spring Security 是什么", "label": "general"}
+{"text": "JWT 怎么实现认证", "label": "general"}
+{"text": "MyBatis 里 # 和 $ 有什么区别", "label": "general"}
+{"text": "MyBatis 的动态 SQL 怎么写", "label": "general"}
+{"text": "resultMap 有什么用", "label": "general"}
+{"text": "MySQL 的索引原理是什么", "label": "general"}
+{"text": "B+树和B树有什么区别", "label": "general"}
+{"text": "什么是聚簇索引", "label": "general"}
+{"text": "联合索引的最左匹配原则是什么", "label": "general"}
+{"text": "SQL 优化有哪些方法", "label": "general"}
+{"text": "explain 怎么用", "label": "general"}
+{"text": "MySQL 的事务隔离级别有哪些", "label": "general"}
+{"text": "幻读是什么", "label": "general"}
+{"text": "MVCC 原理是什么", "label": "general"}
+{"text": "MySQL 里行锁和表锁有什么区别", "label": "general"}
+{"text": "Redis 的数据结构有哪些", "label": "general"}
+{"text": "Redis 持久化方式有哪些", "label": "general"}
+{"text": "RDB 和 AOF 有什么区别", "label": "general"}
+{"text": "Redis 缓存穿透怎么解决", "label": "general"}
+{"text": "缓存雪崩和缓存击穿有什么区别", "label": "general"}
+{"text": "Redis 分布式锁怎么实现", "label": "general"}
+{"text": "什么是 Redis 集群", "label": "general"}
+{"text": "什么是微服务架构", "label": "general"}
+{"text": "微服务和单体架构有什么区别", "label": "general"}
+{"text": "服务注册与发现是什么", "label": "general"}
+{"text": "Nacos 和 Eureka 有什么区别", "label": "general"}
+{"text": "什么是 API 网关", "label": "general"}
+{"text": "服务熔断是什么", "label": "general"}
+{"text": "Hystrix 和 Sentinel 有什么区别", "label": "general"}
+{"text": "Docker 的原理是什么", "label": "general"}
+{"text": "镜像和容器有什么区别", "label": "general"}
+{"text": "Dockerfile 怎么写", "label": "general"}
+{"text": "Docker Compose 是什么", "label": "general"}
+{"text": "K8s 的架构是什么", "label": "general"}
+{"text": "Pod 是什么", "label": "general"}
+{"text": "Deployment 和 Service 有什么区别", "label": "general"}
+{"text": "什么是 Ingress", "label": "general"}
+{"text": "K8s 里的 ConfigMap 怎么用", "label": "general"}
+{"text": "Python 里的列表和元组有什么区别", "label": "general"}
+{"text": "字典的底层实现是什么", "label": "general"}
+{"text": "Python 的 GIL 是什么", "label": "general"}
+{"text": "Python 里的装饰器怎么写", "label": "general"}
+{"text": "生成器和迭代器有什么区别", "label": "general"}
+{"text": "yield 关键字的作用是什么", "label": "general"}
+{"text": "Python 里的上下文管理器是什么", "label": "general"}
+{"text": "__enter__ 和 __exit__ 怎么实现", "label": "general"}
+{"text": "Python 的多进程和多线程区别是什么", "label": "general"}
+{"text": "asyncio 是什么", "label": "general"}
+{"text": "async await 怎么用", "label": "general"}
+{"text": "Python 里的深拷贝和浅拷贝区别是什么", "label": "general"}
+{"text": "列表推导式和 map 有什么区别", "label": "general"}
+{"text": "Python 里的 *args 和 **kwargs 是什么", "label": "general"}
+{"text": "什么是闭包", "label": "general"}
+{"text": "Python 的垃圾回收机制是什么", "label": "general"}
+{"text": "引用计数的缺点是什么", "label": "general"}
+{"text": "numpy 的广播机制是什么", "label": "general"}
+{"text": "pandas 里 merge 和 join 有什么区别", "label": "general"}
+{"text": "groupby 怎么用", "label": "general"}
+{"text": "时间复杂度和空间复杂度怎么分析", "label": "general"}
+{"text": "二分查找的时间复杂度是多少", "label": "general"}
+{"text": "快速排序的原理是什么", "label": "general"}
+{"text": "归并排序和快速排序有什么区别", "label": "general"}
+{"text": "链表和数组的区别是什么", "label": "general"}
+{"text": "什么是哈希冲突", "label": "general"}
+{"text": "哈希冲突怎么解决", "label": "general"}
+{"text": "什么是 DFS 和 BFS", "label": "general"}
+{"text": "二叉树的前中后序遍历怎么实现", "label": "general"}
+{"text": "动态规划和贪心算法有什么区别", "label": "general"}
+{"text": "什么是回溯算法", "label": "general"}
+{"text": "最短路径算法有哪些", "label": "general"}
+{"text": "Dijkstra 算法原理是什么", "label": "general"}
+{"text": "堆排序怎么实现", "label": "general"}
+{"text": "什么是 trie 树", "label": "general"}
+{"text": "Linux 里 chmod 怎么用", "label": "general"}
+{"text": "什么是软链接和硬链接", "label": "general"}
+{"text": "Linux 进程和线程有什么区别", "label": "general"}
+{"text": "top 命令怎么看 CPU 使用率", "label": "general"}
+{"text": "grep 命令怎么用", "label": "general"}
+{"text": "awk 和 sed 有什么区别", "label": "general"}
+{"text": "Git 里 merge 和 rebase 有什么区别", "label": "general"}
+{"text": "git reset 和 git revert 有什么区别", "label": "general"}
+{"text": "什么是 REST API", "label": "general"}
+{"text": "HTTP 和 HTTPS 有什么区别", "label": "general"}
+{"text": "GET 和 POST 的区别是什么", "label": "general"}
+{"text": "什么是设计模式", "label": "general"}
+{"text": "单例模式怎么实现", "label": "general"}
+{"text": "工厂模式是什么", "label": "general"}
+{"text": "观察者模式怎么用", "label": "general"}
+{"text": "什么是大数据", "label": "general"}
+{"text": "Hadoop 和 Spark 有什么区别", "label": "general"}
+{"text": "MapReduce 的原理是什么", "label": "general"}
+{"text": "Kafka 是什么", "label": "general"}
+{"text": "什么是消息队列", "label": "general"}
+{"text": "transformer attention 我没太听懂能说说吗", "label": "general"}
+{"text": "pytorch 的 backward 咋触发的", "label": "general"}
+{"text": "GAN 原理把我整懵了能解释下吗", "label": "general"}
+{"text": "spring ioc 是啥意思", "label": "general"}
+{"text": "mysql 索引咋回事啊", "label": "general"}
+{"text": "git rebase 和 merge 区别是啥", "label": "general"}
+{"text": "python 装饰器咋写", "label": "general"}
+{"text": "redis 缓存穿透咋解决", "label": "general"}
+{"text": "k8s pod 是啥", "label": "general"}
+{"text": "docker 镜像和容器啥区别", "label": "general"}
+{"text": "lstm 三个门分别干啥", "label": "general"}
+{"text": "rnn 梯度消失咋产生的", "label": "general"}
+{"text": "bert cls token 有啥用", "label": "general"}
+{"text": "lora 原理是啥", "label": "general"}
+{"text": "bpe 分词是啥意思", "label": "general"}
+{"text": "死锁咋避免", "label": "general"}
+{"text": "线城安全是什么意思", "label": "general"}
+{"text": "cas 是啥", "label": "general"}
+{"text": "aqs 原理是啥", "label": "general"}
+{"text": "jvm oom 咋排查", "label": "general"}
+{"text": "什么是线城安全", "label": "general"}
+{"text": "synchronized 咋用", "label": "general"}
+{"text": "volatile 干啥用", "label": "general"}
+{"text": "threadlocal 是啥", "label": "general"}
+{"text": "lambda 表达式咋写", "label": "general"}
+{"text": "请解释 Transformer 中 Self-Attention 的计算过程", "label": "general"}
+{"text": "请说明 BERT 预训练任务的设计思路", "label": "general"}
+{"text": "请描述 ResNet 残差网络的基本原理及其解决的问题", "label": "general"}
+{"text": "请解释 Spring AOP 的实现原理", "label": "general"}
+{"text": "请描述 MySQL InnoDB 存储引擎的索引结构", "label": "general"}
+{"text": "请说明 JVM 垃圾回收算法的分类及各自特点", "label": "general"}
+{"text": "请解释 Python 异步编程的基本原理", "label": "general"}
+{"text": "请描述 Docker 容器与虚拟机的区别", "label": "general"}
+{"text": "请解释微服务架构中服务治理的核心组件", "label": "general"}
+{"text": "请说明 Kafka 消息队列的基本工作原理", "label": "general"}
+{"text": "attention 机制原理", "label": "general"}
+{"text": "LSTM 结构", "label": "general"}
+{"text": "pytorch dataloader 用法", "label": "general"}
+{"text": "spring boot 自动配置", "label": "general"}
+{"text": "mysql 慢查询优化", "label": "general"}
+{"text": "redis 数据结构", "label": "general"}
+{"text": "docker compose 用法", "label": "general"}
+{"text": "k8s deployment", "label": "general"}
+{"text": "python 生成器", "label": "general"}
+{"text": "git 分支管理", "label": "general"}
+{"text": "卷积核大小选择", "label": "general"}
+{"text": "批归一化原理", "label": "general"}
+{"text": "迁移学习概念", "label": "general"}
+{"text": "正则表达式基础", "label": "general"}
+{"text": "HTTP 状态码含义", "label": "general"}
+{"text": "单例模式线程安全", "label": "general"}
+{"text": "快排时间复杂度", "label": "general"}
+{"text": "二叉树遍历", "label": "general"}
+{"text": "哈希表冲突处理", "label": "general"}
+{"text": "TCP 三次握手", "label": "general"}
+{"text": "pytorch 里的 nn.Module 咋继承", "label": "general"}
+{"text": "transformer 里的 positional encoding 是干啥的", "label": "general"}
+{"text": "bert 的 fine-tuning 怎么做", "label": "general"}
+{"text": "spring 的 @Autowired 和 @Resource 啥区别", "label": "general"}
+{"text": "mysql 里 B+tree 索引咋工作的", "label": "general"}
+{"text": "redis 里 AOF 持久化是啥", "label": "general"}
+{"text": "k8s 里 ingress 是干啥的", "label": "general"}
+{"text": "python 里的 async/await 怎么用", "label": "general"}
+{"text": "git rebase 是什么操作", "label": "general"}
+{"text": "linux 里 awk 命令怎么用", "label": "general"}
+{"text": "GAN 里 generator 和 discriminator 怎么训练", "label": "general"}
+{"text": "YOLO 里的 anchor box 是什么", "label": "general"}
+{"text": "ResNet 里的 skip connection 为什么有效", "label": "general"}
+{"text": "LoRA 微调和全量微调有什么区别", "label": "general"}
+{"text": "word2vec 里 CBOW 和 skip-gram 哪个更好", "label": "general"}
+{"text": "SparkSQL 和普通 SQL 有什么区别", "label": "general"}
+{"text": "Kafka 里的 partition 和 consumer group 怎么对应", "label": "general"}
+{"text": "Nacos 和 Eureka 注册中心有什么区别", "label": "general"}
+{"text": "Spring Security 里 JWT 认证怎么实现", "label": "general"}
+{"text": "MyBatis 里 # 和 $ 占位符啥区别", "label": "general"}
+{"text": "深度学习从哪里开始学", "label": "general"}
+{"text": "机器学习需要什么数学基础", "label": "general"}
+{"text": "Python 基础学完了该学什么", "label": "general"}
+{"text": "Java 学到什么程度可以找工作", "label": "general"}
+{"text": "大数据方向怎么规划学习路径", "label": "general"}
+{"text": "NLP 方向怎么入门", "label": "general"}
+{"text": "CV 方向需要掌握哪些技术", "label": "general"}
+{"text": "微服务架构怎么系统学习", "label": "general"}
+{"text": "Docker 和 K8s 有必要都学吗", "label": "general"}
+{"text": "混淆矩阵怎么看", "label": "general"}
+{"text": "ROC 曲线面积 AUC 怎么计算", "label": "general"}
+{"text": "决策树信息增益是什么", "label": "general"}
+{"text": "随机森林为什么比单颗决策树好", "label": "general"}
+{"text": "XGBoost 和 LightGBM 有什么区别", "label": "general"}
+{"text": "DBSCAN 聚类和 kmeans 有什么区别", "label": "general"}
+{"text": "PCA 和 t-SNE 有什么区别", "label": "general"}
+{"text": "t-SNE 是什么算法", "label": "general"}
+{"text": "异常检测有哪些方法", "label": "general"}
+{"text": "时间序列平稳性是什么", "label": "general"}
+{"text": "什么是自回归模型", "label": "general"}
+{"text": "注意力机制和 self-attention 有什么区别", "label": "general"}
+{"text": "cross-attention 是什么", "label": "general"}
+{"text": "位置编码有哪几种", "label": "general"}
+{"text": "Sinusoidal 位置编码怎么计算", "label": "general"}
+{"text": "BERT 和 RoBERTa 有什么区别", "label": "general"}
+{"text": "GPT 的训练方式是什么", "label": "general"}
+{"text": "instructGPT 是什么", "label": "general"}
+{"text": "RLHF 是什么意思", "label": "general"}
+{"text": "什么是 prompt engineering", "label": "general"}
+{"text": "few-shot learning 是什么", "label": "general"}
+{"text": "zero-shot 和 few-shot 有什么区别", "label": "general"}
+{"text": "知识蒸馏是什么", "label": "general"}
+{"text": "模型量化是什么", "label": "general"}
+{"text": "int8 量化会损失多少精度", "label": "general"}
+{"text": "什么是联邦学习", "label": "general"}
+{"text": "对比学习是什么", "label": "general"}
+{"text": "自监督学习和无监督学习有什么区别", "label": "general"}
+{"text": "数据增强有哪些方法", "label": "general"}
+{"text": "mixup 数据增强是什么", "label": "general"}
+{"text": "目标检测中 mAP 怎么计算", "label": "general"}
+{"text": "IOU 是什么", "label": "general"}
+{"text": "NMS 是什么", "label": "general"}
+{"text": "图神经网络是什么", "label": "general"}
+{"text": "GNN 和 CNN 有什么区别", "label": "general"}
+{"text": "图卷积网络 GCN 原理是什么", "label": "general"}
+{"text": "什么是迁移学习中的 domain adaptation", "label": "general"}
+{"text": "多任务学习是什么", "label": "general"}
+{"text": "元学习是什么", "label": "general"}
+{"text": "transformer 能处理多长的序列", "label": "general"}
+{"text": "长序列 transformer 有哪些改进", "label": "general"}
+{"text": "Longformer 的稀疏注意力是什么", "label": "general"}
+{"text": "FlashAttention 原理是什么", "label": "general"}
+{"text": "什么是 KV cache", "label": "general"}
+{"text": "推理加速有哪些方法", "label": "general"}
+{"text": "Java 里 HashMap 的底层实现", "label": "general"}
+{"text": "HashMap 的扩容机制是什么", "label": "general"}
+{"text": "ConcurrentHashMap 怎么保证线程安全", "label": "general"}
+{"text": "LinkedHashMap 和 HashMap 区别", "label": "general"}
+{"text": "TreeMap 底层是什么数据结构", "label": "general"}
+{"text": "Java 里 comparator 和 comparable 区别", "label": "general"}
+{"text": "PriorityQueue 怎么自定义比较", "label": "general"}
+{"text": "Java NIO 是什么", "label": "general"}
+{"text": "BIO NIO AIO 有什么区别", "label": "general"}
+{"text": "Netty 是什么", "label": "general"}
+{"text": "Java 里的 SPI 机制是什么", "label": "general"}
+{"text": "动态代理有几种方式", "label": "general"}
+{"text": "JDK 动态代理和 CGLib 有什么区别", "label": "general"}
+{"text": "Spring 里 Bean 的生命周期是什么", "label": "general"}
+{"text": "BeanFactory 和 ApplicationContext 有什么区别", "label": "general"}
+{"text": "Spring 里循环依赖怎么解决", "label": "general"}
+{"text": "三级缓存是什么", "label": "general"}
+{"text": "MyBatis 里的一级缓存和二级缓存有什么区别", "label": "general"}
+{"text": "MySQL 里的 undo log 和 redo log 有什么区别", "label": "general"}
+{"text": "binlog 是什么", "label": "general"}
+{"text": "MySQL 主从复制原理是什么", "label": "general"}
+{"text": "分库分表怎么做", "label": "general"}
+{"text": "ShardingSphere 是什么", "label": "general"}
+{"text": "Redis 里的 LRU 淘汰策略是什么", "label": "general"}
+{"text": "Redis Cluster 的分片原理是什么", "label": "general"}
+{"text": "哨兵模式是什么", "label": "general"}
+{"text": "Zookeeper 是什么", "label": "general"}
+{"text": "Zookeeper 和 Eureka 有什么区别", "label": "general"}
+{"text": "gRPC 和 HTTP REST 有什么区别", "label": "general"}
+{"text": "Protobuf 是什么", "label": "general"}
+{"text": "什么是 CAP 定理", "label": "general"}
+{"text": "BASE 理论是什么", "label": "general"}
+{"text": "分布式事务有哪些解决方案", "label": "general"}
+{"text": "2PC 和 3PC 有什么区别", "label": "general"}
+{"text": "Saga 模式是什么", "label": "general"}
+{"text": "什么是幂等性", "label": "general"}
+{"text": "接口幂等怎么保证", "label": "general"}
+{"text": "大文件上传怎么实现", "label": "general"}
+{"text": "断点续传原理是什么", "label": "general"}
+{"text": "什么是 CDN", "label": "general"}
+{"text": "负载均衡有哪些策略", "label": "general"}
+{"text": "一致性哈希是什么", "label": "general"}
+{"text": "布隆过滤器原理是什么", "label": "general"}
+{"text": "Spark RDD 是什么", "label": "general"}
+{"text": "DataFrame 和 RDD 有什么区别", "label": "general"}
+{"text": "Spark 的 shuffle 机制是什么", "label": "general"}
+{"text": "Hive 是什么", "label": "general"}
+{"text": "Hive 和 MySQL 有什么区别", "label": "general"}
+{"text": "Flink 和 Spark Streaming 有什么区别", "label": "general"}
+{"text": "实时计算和批处理有什么区别", "label": "general"}
+{"text": "数仓分层架构是什么", "label": "general"}
+{"text": "ODS DWD DWS 分别是什么", "label": "general"}
+{"text": "Linux 里的进程间通信方式有哪些", "label": "general"}
+{"text": "管道和消息队列有什么区别", "label": "general"}
+{"text": "shell 脚本怎么写", "label": "general"}
+{"text": "crontab 怎么用", "label": "general"}
+{"text": "什么是 inode", "label": "general"}
+{"text": "什么是文件描述符", "label": "general"}
+{"text": "epoll 和 select 有什么区别", "label": "general"}
+{"text": "IO 多路复用是什么", "label": "general"}
+{"text": "Python 里多进程怎么用", "label": "general"}
+{"text": "multiprocessing 和 threading 区别", "label": "general"}
+{"text": "Python 里的信号量怎么用", "label": "general"}
+{"text": "什么是幂等请求", "label": "general"}
+{"text": "HTTP 长连接和短连接有什么区别", "label": "general"}
+{"text": "WebSocket 和 HTTP 有什么区别", "label": "general"}
+{"text": "什么是 OAuth2", "label": "general"}
+{"text": "JWT 的结构是什么", "label": "general"}
+{"text": "对称加密和非对称加密有什么区别", "label": "general"}
+{"text": "RSA 算法原理是什么", "label": "general"}
+{"text": "什么是 SQL 注入", "label": "general"}
+{"text": "XSS 和 CSRF 有什么区别", "label": "general"}
+{"text": "怎么防止 SQL 注入", "label": "general"}
+{"text": "设计模式六大原则是什么", "label": "general"}
+{"text": "开闭原则是什么", "label": "general"}
+{"text": "里氏替换原则是什么", "label": "general"}
+{"text": "责任链模式是什么", "label": "general"}
+{"text": "策略模式和工厂模式有什么区别", "label": "general"}
+{"text": "代理模式有哪几种", "label": "general"}
+{"text": "装饰者模式是什么", "label": "general"}
+{"text": "梯度下降有几种变体", "label": "general"}
+{"text": "随机梯度下降的缺点是什么", "label": "general"}
+{"text": "Adam 比 SGD 好在哪里", "label": "general"}
+{"text": "学习率warmup是什么", "label": "general"}
+{"text": "cosine annealing 学习率调度是什么", "label": "general"}
+{"text": "什么是 one-cycle policy", "label": "general"}
+{"text": "标签平滑是什么", "label": "general"}
+{"text": "focal loss 解决了什么问题", "label": "general"}
+{"text": "class imbalance 有哪些处理方法", "label": "general"}
+{"text": "什么是 hard negative mining", "label": "general"}
+{"text": "对抗训练是什么", "label": "general"}
+{"text": "什么是模型蒸馏", "label": "general"}
+{"text": "teacher student 网络怎么训练", "label": "general"}
+{"text": "模型剪枝有哪些方法", "label": "general"}
+{"text": "结构化剪枝和非结构化剪枝有什么区别", "label": "general"}
+{"text": "什么是 AutoML", "label": "general"}
+{"text": "神经网络结构搜索 NAS 是什么", "label": "general"}
+{"text": "超参数优化有哪些方法", "label": "general"}
+{"text": "贝叶斯优化怎么用于调参", "label": "general"}
+{"text": "什么是多目标优化", "label": "general"}
+{"text": "帕累托前沿是什么", "label": "general"}
+{"text": "什么是课程学习 Curriculum Learning", "label": "general"}
+{"text": "自训练半监督学习是什么", "label": "general"}
+{"text": "主动学习是什么", "label": "general"}
+{"text": "标注成本高怎么解决", "label": "general"}
+{"text": "弱监督学习是什么", "label": "general"}
+{"text": "噪声标签怎么处理", "label": "general"}
+{"text": "数据清洗有哪些方法", "label": "general"}
+{"text": "离群点检测有哪些算法", "label": "general"}
+{"text": "Isolation Forest 原理是什么", "label": "general"}
+{"text": "Layer Normalization 和 Batch Normalization 有什么区别", "label": "general"}
+{"text": "Group Normalization 是什么", "label": "general"}
+{"text": "Instance Normalization 什么时候用", "label": "general"}
+{"text": "什么是 weight decay", "label": "general"}
+{"text": "正则化 weight decay 和 L2 有什么关系", "label": "general"}
+{"text": "gradient clipping 怎么用", "label": "general"}
+{"text": "什么是 mixed precision training", "label": "general"}
+{"text": "fp16 训练有什么好处", "label": "general"}
+{"text": "什么是梯度累积", "label": "general"}
+{"text": "模型并行和数据并行有什么区别", "label": "general"}
+{"text": "DDP 是什么", "label": "general"}
+{"text": "分布式训练 all-reduce 是什么", "label": "general"}
+{"text": "什么是 ZeRO 优化", "label": "general"}
+{"text": "pipeline parallelism 是什么", "label": "general"}
+{"text": "Tensor parallelism 是什么", "label": "general"}
+{"text": "什么是 checkpoint activation", "label": "general"}
+{"text": "gradient checkpointing 有什么用", "label": "general"}
+{"text": "什么是 profile 分析", "label": "general"}
+{"text": "怎么分析模型的计算瓶颈", "label": "general"}
+{"text": "什么是 FLOPs", "label": "general"}
+{"text": "模型大小和推理速度的关系", "label": "general"}
+{"text": "INT8 推理是什么", "label": "general"}
+{"text": "TensorRT 是什么", "label": "general"}
+{"text": "ONNX 是什么", "label": "general"}
+{"text": "模型转换有哪些工具", "label": "general"}
+{"text": "什么是 TFLite", "label": "general"}
+{"text": "边缘部署有哪些挑战", "label": "general"}
+{"text": "什么是模型压缩", "label": "general"}
+{"text": "参数共享是什么", "label": "general"}
+{"text": "低秩分解是什么", "label": "general"}
+{"text": "pytorch 里的 pin_memory 有什么用", "label": "general"}
+{"text": "prefetch_factor 参数是什么意思", "label": "general"}
+{"text": "pytorch profiler 怎么用", "label": "general"}
+{"text": "torchscript 是什么", "label": "general"}
+{"text": "torch.jit.trace 和 torch.jit.script 有什么区别", "label": "general"}
+{"text": "pytorch 里怎么做梯度裁剪", "label": "general"}
+{"text": "clip_grad_norm 和 clip_grad_value 有什么区别", "label": "general"}
+{"text": "pytorch 里的 amp 自动混合精度怎么用", "label": "general"}
+{"text": "GradScaler 是干什么的", "label": "general"}
+{"text": "pytorch 里的 DDP 怎么初始化", "label": "general"}
+{"text": "torchvision transforms 常用有哪些", "label": "general"}
+{"text": "pytorch 里的 lr_scheduler 有哪些", "label": "general"}
+{"text": "ReduceLROnPlateau 怎么用", "label": "general"}
+{"text": "CosineAnnealingLR 参数怎么设", "label": "general"}
+{"text": "pytorch 里 model.parameters() 和 model.named_parameters() 区别", "label": "general"}
+{"text": "冻结部分层怎么做", "label": "general"}
+{"text": "pytorch 里的 hook 怎么注册", "label": "general"}
+{"text": "register_forward_hook 和 register_backward_hook 区别", "label": "general"}
+{"text": "pytorch 里怎么可视化特征图", "label": "general"}
+{"text": "grad-cam 是什么", "label": "general"}
+{"text": "cross-entropy loss 怎么计算", "label": "general"}
+{"text": "label smoothing cross entropy 是什么", "label": "general"}
+{"text": "温度系数 temperature 在 softmax 里有什么作用", "label": "general"}
+{"text": "beam search 是什么", "label": "general"}
+{"text": "greedy decoding 和 beam search 有什么区别", "label": "general"}
+{"text": "nucleus sampling 是什么", "label": "general"}
+{"text": "top-k sampling 是什么", "label": "general"}
+{"text": "什么是 perplexity", "label": "general"}
+{"text": "困惑度怎么计算", "label": "general"}
+{"text": "BLEU 分数是什么", "label": "general"}
+{"text": "ROUGE 指标是什么", "label": "general"}
+{"text": "BERTScore 是什么", "label": "general"}
+{"text": "文本生成评估指标有哪些", "label": "general"}
+{"text": "什么是 hallucination", "label": "general"}
+{"text": "RAG 检索增强生成是什么", "label": "general"}
+{"text": "向量数据库是什么", "label": "general"}
+{"text": "FAISS 怎么用", "label": "general"}
+{"text": "embedding 相似度计算用什么", "label": "general"}
+{"text": "余弦相似度和欧氏距离有什么区别", "label": "general"}
+{"text": "sentence transformers 是什么", "label": "general"}
+{"text": "Java 里 String.intern() 有什么用", "label": "general"}
+{"text": "方法区溢出怎么排查", "label": "general"}
+{"text": "Java 里的弱引用是什么", "label": "general"}
+{"text": "WeakHashMap 有什么用", "label": "general"}
+{"text": "Java 里的引用类型有哪几种", "label": "general"}
+{"text": "软引用和弱引用有什么区别", "label": "general"}
+{"text": "Java 9 之后模块系统是什么", "label": "general"}
+{"text": "record 类是什么", "label": "general"}
+{"text": "sealed class 是什么", "label": "general"}
+{"text": "Java 里的 switch 表达式怎么用", "label": "general"}
+{"text": "pattern matching instanceof 是什么", "label": "general"}
+{"text": "Java 里的 text block 怎么用", "label": "general"}
+{"text": "CompletableFuture 怎么用", "label": "general"}
+{"text": "异步编程 CompletableFuture 和 Future 有什么区别", "label": "general"}
+{"text": "thenApply 和 thenCompose 有什么区别", "label": "general"}
+{"text": "Java 里的 Executor 框架是什么", "label": "general"}
+{"text": "ScheduledExecutorService 怎么用", "label": "general"}
+{"text": "什么是 fork/join 框架", "label": "general"}
+{"text": "work-stealing 算法是什么", "label": "general"}
+{"text": "Java 里的 Semaphore 怎么用", "label": "general"}
+{"text": "Exchanger 是什么", "label": "general"}
+{"text": "Phaser 和 CyclicBarrier 有什么区别", "label": "general"}
+{"text": "StampedLock 是什么", "label": "general"}
+{"text": "ReadWriteLock 怎么用", "label": "general"}
+{"text": "Java 里的原子类有哪些", "label": "general"}
+{"text": "AtomicInteger 和 volatile 有什么区别", "label": "general"}
+{"text": "LongAdder 比 AtomicLong 好在哪", "label": "general"}
+{"text": "什么是 false sharing", "label": "general"}
+{"text": "CPU 缓存行是什么", "label": "general"}
+{"text": "MESI 协议是什么", "label": "general"}
+{"text": "Spring 里的 FactoryBean 是什么", "label": "general"}
+{"text": "BeanPostProcessor 有什么用", "label": "general"}
+{"text": "BeanDefinitionRegistryPostProcessor 是什么", "label": "general"}
+{"text": "Spring 事件机制是什么", "label": "general"}
+{"text": "ApplicationEvent 怎么发布和监听", "label": "general"}
+{"text": "Spring 里的 @Conditional 怎么用", "label": "general"}
+{"text": "@Profile 注解是什么", "label": "general"}
+{"text": "Spring Boot 的 starter 机制是什么", "label": "general"}
+{"text": "自定义 starter 怎么写", "label": "general"}
+{"text": "Spring Boot actuator 是什么", "label": "general"}
+{"text": "metrics 监控怎么做", "label": "general"}
+{"text": "Micrometer 是什么", "label": "general"}
+{"text": "Spring 里的 RestTemplate 和 WebClient 有什么区别", "label": "general"}
+{"text": "WebFlux 是什么", "label": "general"}
+{"text": "响应式编程是什么", "label": "general"}
+{"text": "Reactor 里的 Mono 和 Flux 是什么", "label": "general"}
+{"text": "背压是什么", "label": "general"}
+{"text": "Spring Data JPA 和 MyBatis 怎么选", "label": "general"}
+{"text": "JPQL 是什么", "label": "general"}
+{"text": "Hibernate 的 N+1 问题是什么", "label": "general"}
+{"text": "Python 里的 dataclass 是什么", "label": "general"}
+{"text": "namedtuple 和 dataclass 有什么区别", "label": "general"}
+{"text": "Python 里的 Protocol 是什么", "label": "general"}
+{"text": "typing 模块有哪些常用类型", "label": "general"}
+{"text": "Python 里的 slots 有什么用", "label": "general"}
+{"text": "property 装饰器怎么用", "label": "general"}
+{"text": "Python 里的 abc 模块是什么", "label": "general"}
+{"text": "抽象基类怎么定义", "label": "general"}
+{"text": "Python 里的 mro 是什么", "label": "general"}
+{"text": "多继承时方法解析顺序是什么", "label": "general"}
+{"text": "Python 里的 super() 怎么用", "label": "general"}
+{"text": "__init__ 和 __new__ 有什么区别", "label": "general"}
+{"text": "__repr__ 和 __str__ 有什么区别", "label": "general"}
+{"text": "Python 里的魔术方法有哪些", "label": "general"}
+{"text": "__getattr__ 和 __getattribute__ 有什么区别", "label": "general"}
+{"text": "Python 里的描述符是什么", "label": "general"}
+{"text": "functools.lru_cache 怎么用", "label": "general"}
+{"text": "Python 里的 partial 是什么", "label": "general"}
+{"text": "itertools 模块有哪些常用函数", "label": "general"}
+{"text": "Python 里的 chain 和 product 怎么用", "label": "general"}
+{"text": "collections 模块里有哪些常用类", "label": "general"}
+{"text": "deque 和 list 有什么区别", "label": "general"}
+{"text": "Counter 怎么用", "label": "general"}
+{"text": "defaultdict 有什么用", "label": "general"}
+{"text": "heapq 模块怎么用", "label": "general"}
+{"text": "Python 里的堆排序怎么实现", "label": "general"}
+{"text": "快速选择算法是什么", "label": "general"}
+{"text": "拓扑排序怎么实现", "label": "general"}
+{"text": "并查集是什么", "label": "general"}
+{"text": "线段树是什么", "label": "general"}
+{"text": "字典树 Trie 怎么实现", "label": "general"}
+{"text": "最长公共子序列算法是什么", "label": "general"}
+{"text": "编辑距离算法是什么", "label": "general"}
+{"text": "KMP 算法原理是什么", "label": "general"}
+{"text": "字符串哈希是什么", "label": "general"}
+{"text": "矩阵快速幂是什么", "label": "general"}
+{"text": "Linux 里的 inotify 是什么", "label": "general"}
+{"text": "文件系统监控怎么做", "label": "general"}
+{"text": "Linux 里的 namespace 是什么", "label": "general"}
+{"text": "cgroup 是什么", "label": "general"}
+{"text": "容器技术的底层原理是什么", "label": "general"}
+{"text": "什么是 overlay 文件系统", "label": "general"}
+{"text": "Linux 里的 OOM killer 是什么", "label": "general"}
+{"text": "swap 分区是什么", "label": "general"}
+{"text": "什么是 NUMA 架构", "label": "general"}
+{"text": "CPU 亲和性是什么", "label": "general"}
+{"text": "Linux 里的 perf 工具怎么用", "label": "general"}
+{"text": "火焰图是什么", "label": "general"}
+{"text": "什么是 eBPF", "label": "general"}
+{"text": "tcpdump 怎么用", "label": "general"}
+{"text": "wireshark 分析网络包", "label": "general"}
+{"text": "HTTP/2 和 HTTP/1.1 有什么区别", "label": "general"}
+{"text": "HTTP/3 基于什么协议", "label": "general"}
+{"text": "QUIC 协议是什么", "label": "general"}
+{"text": "TCP 四次挥手是什么", "label": "general"}
+{"text": "TCP 的拥塞控制算法有哪些", "label": "general"}
+{"text": "什么是 TLS 握手", "label": "general"}
+{"text": "证书链是什么", "label": "general"}
+{"text": "什么是 SNI", "label": "general"}
+{"text": "DNS 解析过程是什么", "label": "general"}
+{"text": "什么是 anycast", "label": "general"}
+{"text": "什么是 BGP 协议", "label": "general"}
+{"text": "什么是 SDN", "label": "general"}
+{"text": "微内核和宏内核有什么区别", "label": "general"}
+{"text": "什么是 POSIX", "label": "general"}
+{"text": "系统调用怎么工作的", "label": "general"}
+{"text": "什么是 attention sink", "label": "general"}
+{"text": "KV cache 怎么压缩", "label": "general"}
+{"text": "speculative decoding 是什么", "label": "general"}
+{"text": "什么是 MoE 架构", "label": "general"}
+{"text": "mixture of experts 怎么工作", "label": "general"}
+{"text": "稀疏激活是什么", "label": "general"}
+{"text": "什么是 token merging", "label": "general"}
+{"text": "clip 模型是什么", "label": "general"}
+{"text": "DALL-E 的原理是什么", "label": "general"}
+{"text": "stable diffusion 怎么工作", "label": "general"}
+{"text": "diffusion model 和 GAN 有什么区别", "label": "general"}
+{"text": "denoising score matching 是什么", "label": "general"}
+{"text": "U-Net 在扩散模型里做什么", "label": "general"}
+{"text": "CFG guidance scale 是什么意思", "label": "general"}
+{"text": "什么是 inpainting", "label": "general"}
+{"text": "ControlNet 是什么", "label": "general"}
+{"text": "Dreambooth 是什么", "label": "general"}
+{"text": "lora 和 dreambooth 的区别是什么", "label": "general"}
+{"text": "textual inversion 是什么", "label": "general"}
+{"text": "什么是 IP-Adapter", "label": "general"}
+{"text": "SAM 分割一切模型是什么", "label": "general"}
+{"text": "CLIP 的对比学习怎么做", "label": "general"}
+{"text": "DINO 自监督视觉是什么", "label": "general"}
+{"text": "MAE 掩码自编码器是什么", "label": "general"}
+{"text": "什么是 visual prompt tuning", "label": "general"}
+{"text": "prefix tuning 和 prompt tuning 有什么区别", "label": "general"}
+{"text": "P-tuning 是什么", "label": "general"}
+{"text": "adapter 方法是什么", "label": "general"}
+{"text": "delta tuning 有哪些方法", "label": "general"}
+{"text": "什么是 PEFT", "label": "general"}
+{"text": "QLoRA 和 LoRA 有什么区别", "label": "general"}
+{"text": "4bit 量化训练是什么", "label": "general"}
+{"text": "什么是 GPTQ 量化", "label": "general"}
+{"text": "AWQ 量化是什么", "label": "general"}
+{"text": "什么是 bitsandbytes", "label": "general"}
+{"text": "deepspeed 是什么", "label": "general"}
+{"text": "ZeRO stage 有几个", "label": "general"}
+{"text": "什么是 tensor offloading", "label": "general"}
+{"text": "CPU offloading 在训练里有什么用", "label": "general"}
+{"text": "gradient accumulation 和 batch size 的关系", "label": "general"}
+{"text": "什么是 FSDP", "label": "general"}
+{"text": "模型并行的通信开销怎么减少", "label": "general"}
+{"text": "all-gather 和 reduce-scatter 是什么", "label": "general"}
+{"text": "什么是 collective communication", "label": "general"}
+{"text": "nccl 是什么", "label": "general"}
+{"text": "什么是 MPI", "label": "general"}
+{"text": "分布式训练的同步和异步模式有什么区别", "label": "general"}
+{"text": "参数服务器架构是什么", "label": "general"}
+{"text": "Horovod 是什么", "label": "general"}
+{"text": "megatron-LM 是什么", "label": "general"}
+{"text": "什么是 pipeline bubble", "label": "general"}
+{"text": "micro-batch 是什么", "label": "general"}
+{"text": "虚拟流水线并行是什么", "label": "general"}
+{"text": "什么是 activation recomputation", "label": "general"}
+{"text": "什么是 selective recomputation", "label": "general"}
+{"text": "continuous batching 是什么", "label": "general"}
+{"text": "dynamic batching 和 static batching 有什么区别", "label": "general"}
+{"text": "什么是 paged attention", "label": "general"}
+{"text": "vLLM 的原理是什么", "label": "general"}
+{"text": "什么是 prefix caching", "label": "general"}
+{"text": "什么是 speculative sampling", "label": "general"}
+{"text": "draft model 是什么", "label": "general"}
+{"text": "什么是 lookahead decoding", "label": "general"}
+{"text": "什么是 medusa decoding", "label": "general"}
+{"text": "什么是 tree attention", "label": "general"}
+{"text": "什么是 multi-query attention", "label": "general"}
+{"text": "grouped query attention 是什么", "label": "general"}
+{"text": "什么是 sliding window attention", "label": "general"}
+{"text": "ALiBi 位置编码是什么", "label": "general"}
+{"text": "RoPE 旋转位置编码是什么", "label": "general"}
+{"text": "什么是 xPos", "label": "general"}
+{"text": "什么是 extended rope", "label": "general"}
+{"text": "YaRN 是什么", "label": "general"}
+{"text": "long context fine-tuning 怎么做", "label": "general"}
+{"text": "什么是 LongLoRA", "label": "general"}
+{"text": "什么是 LIMA 对齐", "label": "general"}
+{"text": "instruction tuning 是什么", "label": "general"}
+{"text": "什么是 SFT supervised fine-tuning", "label": "general"}
+{"text": "什么是 DPO direct preference optimization", "label": "general"}
+{"text": "PPO 在 RLHF 里怎么用", "label": "general"}
+{"text": "什么是 reward model", "label": "general"}
+{"text": "什么是 constitutional AI", "label": "general"}
+{"text": "RLAIF 是什么", "label": "general"}
+{"text": "什么是 rejection sampling fine-tuning", "label": "general"}
+{"text": "什么是 online DPO", "label": "general"}
+{"text": "IPO 和 DPO 有什么区别", "label": "general"}
+{"text": "KTO 是什么", "label": "general"}
+{"text": "什么是 ORPO", "label": "general"}
+{"text": "self-play 微调是什么", "label": "general"}
+{"text": "什么是 iterative preference optimization", "label": "general"}
+{"text": "chain of thought 是什么", "label": "general"}
+{"text": "tree of thoughts 是什么", "label": "general"}
+{"text": "什么是 graph of thoughts", "label": "general"}
+{"text": "ReAct 框架是什么", "label": "general"}
+{"text": "什么是 tool use in LLM", "label": "general"}
+{"text": "function calling 怎么实现", "label": "general"}
+{"text": "什么是 agent", "label": "general"}
+{"text": "LLM agent 的规划能力是什么", "label": "general"}
+{"text": "什么是 reflection", "label": "general"}
+{"text": "什么是 self-consistency", "label": "general"}
+{"text": "majority voting 在推理里有什么用", "label": "general"}
+{"text": "什么是 process reward model", "label": "general"}
+{"text": "ORM 和 PRM 有什么区别", "label": "general"}
+{"text": "什么是 MCTS 在 LLM 里的应用", "label": "general"}
+{"text": "AlphaCode 是什么", "label": "general"}
+{"text": "code LLM 和通用 LLM 有什么区别", "label": "general"}
+{"text": "什么是 pass@k 指标", "label": "general"}
+{"text": "HumanEval 是什么基准", "label": "general"}
+{"text": "MMLU 评测是什么", "label": "general"}
+{"text": "什么是 BIG-bench", "label": "general"}
+{"text": "what is hellaswag benchmark", "label": "general"}
+{"text": "什么是 ARC challenge", "label": "general"}
+{"text": "TruthfulQA 是什么", "label": "general"}
+{"text": "什么是 alignment tax", "label": "general"}
+{"text": "capability vs safety 的 tradeoff", "label": "general"}
+{"text": "什么是 emergent abilities", "label": "general"}
+{"text": "scaling law 是什么", "label": "general"}
+{"text": "Chinchilla scaling 是什么", "label": "general"}
+{"text": "什么是 compute-optimal training", "label": "general"}
+{"text": "什么是 inference compute scaling", "label": "general"}
+{"text": "test time compute 是什么", "label": "general"}
+{"text": "o1 模型的推理方式是什么", "label": "general"}
+{"text": "什么是 slow thinking", "label": "general"}
+{"text": "什么是 reasoning LLM", "label": "general"}
+{"text": "什么是 long-form reasoning", "label": "general"}
+{"text": "什么是 search augmented generation", "label": "general"}
+{"text": "什么是 multi-hop reasoning", "label": "general"}
+{"text": "什么是 compositional generalization", "label": "general"}
+{"text": "什么是 systematic generalization", "label": "general"}
+{"text": "什么是 OOD generalization", "label": "general"}
+{"text": "什么是 distribution shift", "label": "general"}
+{"text": "covariate shift 和 label shift 有什么区别", "label": "general"}
+{"text": "什么是 domain adaptation", "label": "general"}
+{"text": "UDA unsupervised domain adaptation 是什么", "label": "general"}
+{"text": "什么是 adversarial examples", "label": "general"}
+{"text": "FGSM 攻击是什么", "label": "general"}
+{"text": "PGD 攻击是什么", "label": "general"}
+{"text": "什么是 adversarial training", "label": "general"}
+{"text": "什么是 certified robustness", "label": "general"}
+{"text": "什么是 randomized smoothing", "label": "general"}
+{"text": "什么是 interpretability", "label": "general"}
+{"text": "saliency map 是什么", "label": "general"}
+{"text": "integrated gradients 是什么", "label": "general"}
+{"text": "SHAP 是什么", "label": "general"}
+{"text": "LIME 是什么", "label": "general"}
+{"text": "什么是 concept activation vector", "label": "general"}
+{"text": "probing classifier 是什么", "label": "general"}
+{"text": "mechanistic interpretability 是什么", "label": "general"}
+{"text": "什么是 circuit 在神经网络里", "label": "general"}
+{"text": "什么是 superposition hypothesis", "label": "general"}
+{"text": "什么是 polysemanticity", "label": "general"}
+{"text": "sparse autoencoder 在可解释性里有什么用", "label": "general"}
+{"text": "什么是 feature steering", "label": "general"}
+{"text": "什么是 activation patching", "label": "general"}
+{"text": "什么是 causal mediation analysis", "label": "general"}
+{"text": "Java 里什么是虚方法表", "label": "general"}
+{"text": "动态分派是什么", "label": "general"}
+{"text": "Java 里的字节码是什么", "label": "general"}
+{"text": "javap 怎么用", "label": "general"}
+{"text": "字节码增强有哪些框架", "label": "general"}
+{"text": "ASM 和 javassist 有什么区别", "label": "general"}
+{"text": "bytebuddy 是什么", "label": "general"}
+{"text": "Java agent 是什么", "label": "general"}
+{"text": "instrumentation API 怎么用", "label": "general"}
+{"text": "什么是 premain 方法", "label": "general"}
+{"text": "Java 里的软件度量有哪些", "label": "general"}
+{"text": "圈复杂度是什么", "label": "general"}
+{"text": "什么是技术债务", "label": "general"}
+{"text": "重构的时机怎么判断", "label": "general"}
+{"text": "Martin Fowler 的重构手法有哪些", "label": "general"}
+{"text": "代码坏味道有哪些", "label": "general"}
+{"text": "什么是 SOLID 原则", "label": "general"}
+{"text": "依赖倒置原则是什么", "label": "general"}
+{"text": "接口隔离原则是什么", "label": "general"}
+{"text": "单一职责原则是什么", "label": "general"}
+{"text": "开闭原则怎么实践", "label": "general"}
+{"text": "什么是领域模型", "label": "general"}
+{"text": "贫血模型和充血模型有什么区别", "label": "general"}
+{"text": "什么是六边形架构", "label": "general"}
+{"text": "洋葱架构是什么", "label": "general"}
+{"text": "clean architecture 的层次是什么", "label": "general"}
+{"text": "什么是 ports and adapters", "label": "general"}
+{"text": "什么是 event sourcing", "label": "general"}
+{"text": "什么是 aggregate root", "label": "general"}
+{"text": "value object 和 entity 有什么区别", "label": "general"}
+{"text": "什么是 bounded context", "label": "general"}
+{"text": "context map 是什么", "label": "general"}
+{"text": "什么是 anti-corruption layer", "label": "general"}
+{"text": "什么是 saga 模式", "label": "general"}
+{"text": "什么是 outbox pattern", "label": "general"}
+{"text": "transactional outbox 怎么实现", "label": "general"}
+{"text": "什么是 inbox pattern", "label": "general"}
+{"text": "什么是 process manager", "label": "general"}
+{"text": "什么是 choreography vs orchestration", "label": "general"}
+{"text": "什么是 service mesh", "label": "general"}
+{"text": "istio 是什么", "label": "general"}
+{"text": "envoy proxy 是什么", "label": "general"}
+{"text": "sidecar 模式是什么", "label": "general"}
+{"text": "什么是 circuit breaker pattern", "label": "general"}
+{"text": "bulkhead pattern 是什么", "label": "general"}
+{"text": "retry 和 timeout 怎么配合使用", "label": "general"}
+{"text": "什么是 backpressure", "label": "general"}
+{"text": "reactive streams 规范是什么", "label": "general"}
+{"text": "什么是 eventual consistency", "label": "general"}
+{"text": "CRDT 是什么", "label": "general"}
+{"text": "向量时钟是什么", "label": "general"}
+{"text": "lamport timestamp 是什么", "label": "general"}
+{"text": "什么是 raft 协议", "label": "general"}
+{"text": "paxos 和 raft 有什么区别", "label": "general"}
+{"text": "什么是 quorum", "label": "general"}
+{"text": "什么是 gossip protocol", "label": "general"}
+{"text": "一致性哈希在分布式系统里怎么用", "label": "general"}
+{"text": "虚拟节点是什么", "label": "general"}
+{"text": "什么是数据分片", "label": "general"}
+{"text": "hash 分片和 range 分片有什么区别", "label": "general"}
+{"text": "什么是 rebalancing", "label": "general"}
+{"text": "什么是 hot spot", "label": "general"}
+{"text": "什么是 write amplification", "label": "general"}
+{"text": "什么是 read amplification", "label": "general"}
+{"text": "LSM tree 是什么", "label": "general"}
+{"text": "SSTable 是什么", "label": "general"}
+{"text": "compaction 是什么", "label": "general"}
+{"text": "leveldb 的原理是什么", "label": "general"}
+{"text": "rocksdb 和 leveldb 有什么区别", "label": "general"}
+{"text": "什么是 WAL write ahead log", "label": "general"}
+{"text": "什么是 MVCC 多版本并发控制", "label": "general"}
+{"text": "快照隔离是什么", "label": "general"}
+{"text": "serializable snapshot isolation 是什么", "label": "general"}
+{"text": "什么是 Spanner 数据库", "label": "general"}
+{"text": "TiDB 和 MySQL 有什么区别", "label": "general"}
+{"text": "什么是 NewSQL", "label": "general"}
+{"text": "什么是 HTAP", "label": "general"}
+{"text": "什么是列存储", "label": "general"}
+{"text": "parquet 文件格式是什么", "label": "general"}
+{"text": "arrow 内存格式是什么", "label": "general"}
+{"text": "什么是向量化执行引擎", "label": "general"}
+{"text": "SIMD 在数据库里有什么用", "label": "general"}
+{"text": "什么是 sparse attention", "label": "general"}
+{"text": "flash attention 2 和 flash attention 有什么区别", "label": "general"}
+{"text": "什么是 ring attention", "label": "general"}
+{"text": "sequence parallelism 是什么", "label": "general"}
+{"text": "什么是 context parallelism", "label": "general"}
+{"text": "什么是 expert parallelism", "label": "general"}
+{"text": "moe 的负载均衡怎么做", "label": "general"}
+{"text": "什么是 auxiliary loss in MoE", "label": "general"}
+{"text": "什么是 token dropping", "label": "general"}
+{"text": "expert routing 怎么工作", "label": "general"}
+{"text": "什么是 soft moe", "label": "general"}
+{"text": "什么是 shared expert", "label": "general"}
+{"text": "mixtral 和 GPT 架构有什么区别", "label": "general"}
+{"text": "什么是 SSM state space model", "label": "general"}
+{"text": "Mamba 和 Transformer 有什么区别", "label": "general"}
+{"text": "selective SSM 是什么", "label": "general"}
+{"text": "什么是 linear attention", "label": "general"}
+{"text": "RetNet 是什么", "label": "general"}
+{"text": "RWKV 是什么", "label": "general"}
+{"text": "Hyena 是什么", "label": "general"}
+{"text": "什么是 in-context learning", "label": "general"}
+{"text": "ICL 的机制是什么", "label": "general"}
+{"text": "few-shot prompting 和 ICL 是一回事吗", "label": "general"}
+{"text": "什么是 meta-learning", "label": "general"}
+{"text": "MAML 算法是什么", "label": "general"}
+{"text": "什么是 prototypical network", "label": "general"}
+{"text": "我们课程里 Transformer 项目怎么部署的", "label": "specialized"}
+{"text": "课程项目的 Dataset 类为什么报错", "label": "specialized"}
+{"text": "我们 AI 实战项目里的模型保存路径在哪里", "label": "specialized"}
+{"text": "老师说的那个注意力可视化在哪个文件里", "label": "specialized"}
+{"text": "第四章的 LSTM 项目我跑不起来", "label": "specialized"}
+{"text": "课程里的文本分类项目准确率只有 60% 怎么提升", "label": "specialized"}
+{"text": "我们实战项目的训练集是怎么划分的", "label": "specialized"}
+{"text": "第二个实战项目的数据预处理部分看不懂", "label": "specialized"}
+{"text": "上次老师演示的那个模型怎么保存", "label": "specialized"}
+{"text": "课程案例里的 embedding 层为什么维度是 128", "label": "specialized"}
+{"text": "我们课程的情感分析项目用的是什么数据集", "label": "specialized"}
+{"text": "实战项目里的 collate_fn 函数怎么改", "label": "specialized"}
+{"text": "课程里 BERT 微调那个例子代码报错了", "label": "specialized"}
+{"text": "老师讲的那个 GAN 生成图片的项目在哪里下载", "label": "specialized"}
+{"text": "我们 NLP 课程的第三章项目代码在哪", "label": "specialized"}
+{"text": "课程里的图像分类项目怎么换成自己的数据集", "label": "specialized"}
+{"text": "实战项目的 learning rate scheduler 是怎么设置的", "label": "specialized"}
+{"text": "老师课上用的那个 tokenizer 是什么版本", "label": "specialized"}
+{"text": "课程里做过的目标检测项目 anchor 怎么调", "label": "specialized"}
+{"text": "我们学的那个推荐系统项目数据怎么预处理", "label": "specialized"}
+{"text": "课程作业里的 CNN 模型跑完 loss 不下降怎么回事", "label": "specialized"}
+{"text": "第五章的 ResNet 迁移学习项目训练太慢了", "label": "specialized"}
+{"text": "课程材料里的 requirements.txt 装不上去", "label": "specialized"}
+{"text": "我们实战里那个多分类项目 softmax 输出维度搞错了", "label": "specialized"}
+{"text": "老师讲的强化学习项目 reward 怎么定义的", "label": "specialized"}
+{"text": "课程里 seq2seq 翻译项目 BLEU 分数怎么计算", "label": "specialized"}
+{"text": "我们 AI 训练营里的大模型微调项目用的是哪个基座", "label": "specialized"}
+{"text": "课程 LoRA 微调那个实战 rank 设置多少合适", "label": "specialized"}
+{"text": "实战项目里 GPU 显存不够怎么解决，老师有说吗", "label": "specialized"}
+{"text": "我们课程的知识蒸馏项目 teacher model 是什么", "label": "specialized"}
+{"text": "课程里的语音识别项目代码在哪个目录", "label": "specialized"}
+{"text": "老师演示的那个对比学习实战用的什么框架", "label": "specialized"}
+{"text": "我们项目里 dataloader 的 batch_size 设成多少了", "label": "specialized"}
+{"text": "课程案例里多头注意力的头数为什么选 8", "label": "specialized"}
+{"text": "作业里要求实现的 self-attention 模板代码在哪", "label": "specialized"}
+{"text": "我们实战项目部署到服务器报环境错误怎么解决", "label": "specialized"}
+{"text": "课程里的 OCR 项目用的是什么模型", "label": "specialized"}
+{"text": "老师说第六章会有大项目是什么项目", "label": "specialized"}
+{"text": "我们课程里的时序预测项目用的是什么数据", "label": "specialized"}
+{"text": "课程作业第二题的 LSTM 层数为什么是两层", "label": "specialized"}
+{"text": "我们 Java 实战项目的微服务怎么拆分的", "label": "specialized"}
+{"text": "课程里的商城项目订单模块代码在哪里", "label": "specialized"}
+{"text": "我们的 springboot 实战项目启动报错找不到 bean", "label": "specialized"}
+{"text": "老师讲的那个 redis 缓存方案在项目里怎么用的", "label": "specialized"}
+{"text": "课程里的秒杀系统项目怎么防止超卖", "label": "specialized"}
+{"text": "我们 Java 训练营的最后一个大项目是什么", "label": "specialized"}
+{"text": "实战项目里的 mybatis xml 配置文件怎么找到", "label": "specialized"}
+{"text": "课程里的 JWT 鉴权模块我看不懂", "label": "specialized"}
+{"text": "我们项目里 RocketMQ 消息队列是怎么集成的", "label": "specialized"}
+{"text": "老师讲的分布式锁那个课程代码在哪", "label": "specialized"}
+{"text": "课程里的用户中心模块怎么做单点登录", "label": "specialized"}
+{"text": "我们实战项目数据库表结构设计在哪里看", "label": "specialized"}
+{"text": "课程里的 Elasticsearch 搜索功能怎么做的", "label": "specialized"}
+{"text": "实战项目里 Docker 怎么部署的，有 compose 文件吗", "label": "specialized"}
+{"text": "老师课上演示的 k8s 部署脚本在哪", "label": "specialized"}
+{"text": "我们 Java 实战里的网关鉴权逻辑看不懂", "label": "specialized"}
+{"text": "课程里的 sentinel 熔断那个配置怎么写的", "label": "specialized"}
+{"text": "我们项目里的分库分表是怎么设计的", "label": "specialized"}
+{"text": "课程材料里的 ER 图在哪里", "label": "specialized"}
+{"text": "实战项目里为什么要用 feign 而不是 resttemplate", "label": "specialized"}
+{"text": "老师说的那个 spring cloud gateway 过滤器怎么写的", "label": "specialized"}
+{"text": "我们课程里的内容审核功能是怎么实现的", "label": "specialized"}
+{"text": "课程里的支付模块用的是哪个第三方支付", "label": "specialized"}
+{"text": "实战项目里的消息推送功能怎么做的", "label": "specialized"}
+{"text": "我们课程里的并发抢购场景用的是什么方案", "label": "specialized"}
+{"text": "课程作业要求实现的 ThreadPool 参数怎么设置的", "label": "specialized"}
+{"text": "老师说的 AQS 那个手写 lock 例子在哪个章节", "label": "specialized"}
+{"text": "我们 Java 项目里为什么要用 Nacos 不用 Eureka", "label": "specialized"}
+{"text": "课程里的 ELK 日志收集是怎么接入项目的", "label": "specialized"}
+{"text": "实战项目里的接口幂等性是怎么实现的", "label": "specialized"}
+{"text": "我们课程里的微信登录功能代码看不懂", "label": "specialized"}
+{"text": "课程案例里 Caffeine 本地缓存是怎么配置的", "label": "specialized"}
+{"text": "老师演示的 Seata 分布式事务那个例子怎么跑", "label": "specialized"}
+{"text": "我们实战项目里的 MQ 消息丢失问题怎么解决的", "label": "specialized"}
+{"text": "课程里商城项目的库存扣减逻辑在哪个 service 里", "label": "specialized"}
+{"text": "实战里 Zookeeper 协调服务怎么用的，有课程材料吗", "label": "specialized"}
+{"text": "我们课程的接口文档用的是 Swagger 还是 Knife4j", "label": "specialized"}
+{"text": "老师讲的那个慢 SQL 优化案例代码在哪", "label": "specialized"}
+{"text": "课程里的权限系统 RBAC 怎么设计的", "label": "specialized"}
+{"text": "我们 Java 训练营的代码都在哪个 git 仓库", "label": "specialized"}
+{"text": "我们 Python 爬虫课程的项目代码在哪里", "label": "specialized"}
+{"text": "课程里的数据分析实战用的是什么数据集", "label": "specialized"}
+{"text": "老师讲的 pandas 数据清洗那个案例文件在哪", "label": "specialized"}
+{"text": "我们的 Spark 实战项目跑不起来报 Java 版本错误", "label": "specialized"}
+{"text": "课程里 Hive 那个实战 SQL 在哪个文件里", "label": "specialized"}
+{"text": "实战项目里 Kafka 消费者代码看不懂", "label": "specialized"}
+{"text": "我们大数据课程的最终项目是用户画像还是推荐系统", "label": "specialized"}
+{"text": "课程里 Flink 实时计算项目环境怎么搭", "label": "specialized"}
+{"text": "老师演示的数仓 ETL 流程用的什么工具", "label": "specialized"}
+{"text": "我们课程里 scrapy 爬虫框架的项目怎么运行", "label": "specialized"}
+{"text": "课程案例里的可视化用的是 echarts 还是 matplotlib", "label": "specialized"}
+{"text": "实战项目里 redis 作为 session 存储怎么配的", "label": "specialized"}
+{"text": "我们课程里的 A/B 测试项目是怎么做的", "label": "specialized"}
+{"text": "老师说的那个用户行为分析课程项目在哪里下载", "label": "specialized"}
+{"text": "课程里 airflow 工作流调度是怎么接入项目的", "label": "specialized"}
+{"text": "我们 Python 训练营的机器学习实战用的是哪个算法", "label": "specialized"}
+{"text": "课程里的文本挖掘项目用的是什么分词库", "label": "specialized"}
+{"text": "实战项目里 Flask 接口为什么返回 500", "label": "specialized"}
+{"text": "我们的爬虫项目被反爬了，课程里有说解决方法吗", "label": "specialized"}
+{"text": "课程里数据可视化大屏项目怎么部署", "label": "specialized"}
+{"text": "老师讲的数仓分层那个项目 DWD 层在哪里", "label": "specialized"}
+{"text": "我们课程的用户标签体系是怎么设计的", "label": "specialized"}
+{"text": "课程里 MySQL 转 HBase 那个迁移脚本在哪", "label": "specialized"}
+{"text": "实战项目里 Spark SQL 跑出来的结果和预期不对", "label": "specialized"}
+{"text": "我们课程里的 GNN 推荐系统项目用了什么图数据库", "label": "specialized"}
+{"text": "上次老师演示的那个分类模型准确率是多少", "label": "specialized"}
+{"text": "我们的项目里为什么用 128 维的 embedding", "label": "specialized"}
+{"text": "上课那个 spring boot 项目启动一直报错", "label": "specialized"}
+{"text": "我们的 xiangmu 跑不起来了", "label": "specialized"}
+{"text": "第一个项目的环境配置视频在哪里", "label": "specialized"}
+{"text": "训练营里那个算法题答案在哪里找", "label": "specialized"}
+{"text": "老师昨天演示的 sql 优化案例能发一下吗", "label": "specialized"}
+{"text": "我们的代码仓库地址是什么", "label": "specialized"}
+{"text": "课程里那个 vue 前端项目怎么跑起来", "label": "specialized"}
+{"text": "我们学的那个 ci/cd 流程在项目里怎么配置的", "label": "specialized"}
+{"text": "我们的 xiangmu 数据集在哪里下载", "label": "specialized"}
+{"text": "课程里的 shendu 学习项目怎么跑", "label": "specialized"}
+{"text": "实战里那个 weifuwu 拆分方案在哪", "label": "specialized"}
+{"text": "老师说的 huancun 方案在课程哪里", "label": "specialized"}
+{"text": "课程作业关于线城安全那题怎么做", "label": "specialized"}
+{"text": "我们的 peixun 项目代码提交到哪里", "label": "specialized"}
+{"text": "课程里的 zifudong 词向量项目跑不起来", "label": "specialized"}
+{"text": "实战项目 shujuku 设计文档在哪看", "label": "specialized"}
+{"text": "课程里的 fenbushi 事务那个案例怎么跑", "label": "specialized"}
+{"text": "我们的 renwu 调度项目部署到 k8s 怎么操作", "label": "specialized"}
+{"text": "课程项目代码", "label": "specialized"}
+{"text": "实战作业报错", "label": "specialized"}
+{"text": "第三章项目", "label": "specialized"}
+{"text": "课程数据集下载", "label": "specialized"}
+{"text": "老师演示代码", "label": "specialized"}
+{"text": "训练营项目部署", "label": "specialized"}
+{"text": "课程材料在哪", "label": "specialized"}
+{"text": "实战项目启动失败", "label": "specialized"}
+{"text": "课程案例 GPU", "label": "specialized"}
+{"text": "作业提交方式", "label": "specialized"}
+{"text": "课程项目 git 仓库", "label": "specialized"}
+{"text": "老师讲的案例代码", "label": "specialized"}
+{"text": "实战项目环境搭建", "label": "specialized"}
+{"text": "课程作业截止时间", "label": "specialized"}
+{"text": "第五章课程项目", "label": "specialized"}
+{"text": "训练营最终作业", "label": "specialized"}
+{"text": "课程里的数据集", "label": "specialized"}
+{"text": "实战项目跑不起来", "label": "specialized"}
+{"text": "课程 ppt 在哪下", "label": "specialized"}
+{"text": "项目代码找不到", "label": "specialized"}
+{"text": "我们课程那个 BERT 项目咋弄啊", "label": "specialized"}
+{"text": "老师说的 redis 方案在项目里咋用啊", "label": "specialized"}
+{"text": "实战项目里那个微服务咋拆分的", "label": "specialized"}
+{"text": "课程里的爬虫项目咋被封 ip 了", "label": "specialized"}
+{"text": "我们的 spark 项目咋跑不起来了", "label": "specialized"}
+{"text": "训练营的最后大项目是啥", "label": "specialized"}
+{"text": "课程作业啥时候截止啊", "label": "specialized"}
+{"text": "老师演示的那个 gan 生成图片咋下载", "label": "specialized"}
+{"text": "实战里的 k8s 部署脚本在哪啊", "label": "specialized"}
+{"text": "我们课程的数据集咋下载", "label": "specialized"}
+{"text": "课程项目 loss 一直不降咋回事", "label": "specialized"}
+{"text": "老师讲的那个 jwt 认证在哪个模块啊", "label": "specialized"}
+{"text": "实战那个 mq 消费者代码看不懂啊", "label": "specialized"}
+{"text": "我们的训练营代码在哪个仓库啊", "label": "specialized"}
+{"text": "课程里的用户画像项目咋部署啊", "label": "specialized"}
+{"text": "我们课程里的 Transformer 部署项目我看不懂，能解释一下吗", "label": "specialized"}
+{"text": "课程那个 LSTM 股价预测项目一直报维度不匹配，不知道怎么改", "label": "specialized"}
+{"text": "老师说的 redis 缓存方案我在项目里找不到对应的代码", "label": "specialized"}
+{"text": "我们 Java 实战里的 Seata 分布式事务配置太复杂了，有没有文档", "label": "specialized"}
+{"text": "课程里的 ResNet 迁移学习项目我改了数据集但准确率很低，有没有建议", "label": "specialized"}
+{"text": "我们的 Spark 实战项目环境一直搭不起来，老师有说过什么解决方案吗", "label": "specialized"}
+{"text": "课程里的 Elasticsearch 搜索功能那块我没太看懂，能帮我看看吗", "label": "specialized"}
+{"text": "实战项目里的 Docker 部署脚本我不太会改，有没有说明文档", "label": "specialized"}
+{"text": "我们课程的数据预处理那块代码看不懂，能说说思路吗", "label": "specialized"}
+{"text": "课程里的 GAN 生成图片项目我跑完没有输出，应该怎么排查", "label": "specialized"}
+{"text": "老师演示的接口鉴权模块我找不到对应文件，能告诉我在哪里吗", "label": "specialized"}
+{"text": "我们实战项目里的 Flink 实时处理我没接触过，课程有没有入门说明", "label": "specialized"}
+{"text": "课程里的推荐系统项目召回率很低，不知道从哪里优化", "label": "specialized"}
+{"text": "我们训练营的最终项目评分标准在哪里，我找不到", "label": "specialized"}
+{"text": "实战作业要求实现的 ThreadPool 我不确定参数设置是否正确", "label": "specialized"}
+{"text": "我们课程里第三章的 Transformer 机器翻译项目跑起来之后 loss 一直不下降，已经调整了 learning rate 但还是有问题，请问老师有没有说过这种情况怎么处理", "label": "specialized"}
+{"text": "课程案例里的情感分析项目使用了 BERT 微调，但是我发现训练集的 label 分布很不均衡，课程里有没有讲过如何处理类别不平衡的情况", "label": "specialized"}
+{"text": "我们 Java 实战项目里的商城秒杀模块，老师讲过使用 Redis 分布式锁来防止超卖，但是我在代码里找不到对应的实现，请问是在哪个 service 类里面", "label": "specialized"}
+{"text": "实战项目部署到 Docker 容器里之后一直报找不到配置文件的错误，我们课程里有没有讲过在容器里如何挂载配置文件的方案", "label": "specialized"}
+{"text": "我们训练营的大数据实战项目里用了 Spark 做用户行为分析，但是我发现 join 操作特别慢，课程里老师有没有讲过 Spark SQL 的性能调优方法", "label": "specialized"}
+{"text": "课程里的目标检测实战项目我换了自己的数据集之后 mAP 特别低，原来课程数据集能达到 0.8 以上，不知道是数据标注问题还是模型配置问题，课程有没有说过怎么排查", "label": "specialized"}
+{"text": "我们 Python 爬虫实战课程里的课程项目用了 scrapy 框架，但是现在目标网站加了反爬措施，课程里有没有讲过针对这种情况的处理方案", "label": "specialized"}
+{"text": "实战项目里的微服务间的调用我们用的是 feign，但是现在偶尔会出现调用超时的情况，老师在课程里有没有说过 feign 超时参数怎么配置以及重试策略怎么设计", "label": "specialized"}
+{"text": "课程案例里的 LSTM 时序预测项目我按照代码跑了但是预测结果和真实值偏差很大，我检查了数据格式没有问题，请问课程里老师有没有讲过这种情况应该从哪几个方向排查", "label": "specialized"}
+{"text": "我们 Java 实战课程里的用户权限系统老师讲的是基于 RBAC 模型设计的，我想看一下完整的数据库表设计，请问课程材料里有没有 ER 图或者设计文档", "label": "specialized"}
+{"text": "我们课程 PyTorch 实战项目里自定义 Dataset 怎么改", "label": "specialized"}
+{"text": "课程里的 word2vec 训练脚本跑不起来", "label": "specialized"}
+{"text": "老师讲的那个 attention 可视化代码在第几章", "label": "specialized"}
+{"text": "实战里的 batch_size 课程里推荐设置多少", "label": "specialized"}
+{"text": "我们的 NLP 课程第二章作业怎么提交", "label": "specialized"}
+{"text": "课程里那个 Bi-LSTM 项目输出维度对不上", "label": "specialized"}
+{"text": "训练营 PyTorch 项目的 GPU 环境怎么配置的", "label": "specialized"}
+{"text": "课程作业里要求的 transformer 是从零实现还是用库", "label": "specialized"}
+{"text": "我们实战项目的 val loss 一直比 train loss 高很多正常吗", "label": "specialized"}
+{"text": "课程里大模型微调实战用的是什么数据集", "label": "specialized"}
+{"text": "老师演示 BERT 那个 checkpoint 文件在哪下载", "label": "specialized"}
+{"text": "实战课程里的模型评估指标用的是 F1 还是 accuracy", "label": "specialized"}
+{"text": "我们课程里的数据增强方案是在 Dataset 里做的还是在 transform 里", "label": "specialized"}
+{"text": "课程项目里预训练权重文件太大了怎么下载", "label": "specialized"}
+{"text": "老师说的那个混淆矩阵可视化代码在课程哪里", "label": "specialized"}
+{"text": "我们第四个实战项目的环境依赖文件在哪里", "label": "specialized"}
+{"text": "课程里的图像分割项目用的是什么损失函数", "label": "specialized"}
+{"text": "实战项目里模型推理速度太慢老师有没有说优化方案", "label": "specialized"}
+{"text": "我们课程的最终项目展示要做成什么形式", "label": "specialized"}
+{"text": "课程里的多标签分类项目 threshold 怎么设置的", "label": "specialized"}
+{"text": "我们 Java 课程的第一个实战项目是什么", "label": "specialized"}
+{"text": "课程里 springboot 项目的 application.yml 怎么配置", "label": "specialized"}
+{"text": "老师讲的那个 redis 缓存穿透解决方案在课程项目里怎么用", "label": "specialized"}
+{"text": "我们实战的 mysql 表设计老师有没有说过规范", "label": "specialized"}
+{"text": "课程里的 feign 调用超时怎么配置的", "label": "specialized"}
+{"text": "实战项目里 nacos 配置中心怎么接入的", "label": "specialized"}
+{"text": "我们课程的 API 网关是用 gateway 还是 zuul", "label": "specialized"}
+{"text": "课程里的 logback 日志配置文件在哪里", "label": "specialized"}
+{"text": "老师说的那个接口限流方案在项目里哪个模块", "label": "specialized"}
+{"text": "我们实战里的数据库连接池用的是什么", "label": "specialized"}
+{"text": "课程里 docker 镜像打包脚本在哪里", "label": "specialized"}
+{"text": "实战项目的代码提交规范是什么", "label": "specialized"}
+{"text": "我们课程里的定时任务用的是 quartz 还是 xxl-job", "label": "specialized"}
+{"text": "老师讲的 jvm 调优那个实战案例在第几章", "label": "specialized"}
+{"text": "课程里的并发编程作业要求实现什么", "label": "specialized"}
+{"text": "我们大数据课程里的 hive 建表语句在哪", "label": "specialized"}
+{"text": "课程里 kafka topic 的 partition 数量怎么定的", "label": "specialized"}
+{"text": "老师演示的 spark 调优案例代码在哪个目录", "label": "specialized"}
+{"text": "我们实战里的 hdfs 存储路径是怎么规划的", "label": "specialized"}
+{"text": "课程里的 flume 采集配置文件在哪里", "label": "specialized"}
+{"text": "实战项目里 hbase rowkey 设计老师是怎么讲的", "label": "specialized"}
+{"text": "我们课程的数仓项目用的是 hive 还是 doris", "label": "specialized"}
+{"text": "课程里的 datax 数据同步脚本在哪里", "label": "specialized"}
+{"text": "老师说的 yarn 资源配置在课程哪里", "label": "specialized"}
+{"text": "我们的 Flink 课程实战项目用的是哪个版本", "label": "specialized"}
+{"text": "课程里的 git 工作流是怎么规范的", "label": "specialized"}
+{"text": "实战项目里的 ci/cd 是怎么配置的", "label": "specialized"}
+{"text": "我们课程的设计模式作业要求实现几个", "label": "specialized"}
+{"text": "老师讲的那个 linux 运维脚本在哪里", "label": "specialized"}
+{"text": "课程里的 RESTful 接口规范是什么", "label": "specialized"}
+{"text": "实战项目里的单元测试用的是什么框架", "label": "specialized"}
+{"text": "我们课程里 swagger 文档怎么生成", "label": "specialized"}
+{"text": "老师说的那个代码 review 标准在课程材料里吗", "label": "specialized"}
+{"text": "课程里的 mock 测试怎么做", "label": "specialized"}
+{"text": "我们实战项目的监控方案是什么", "label": "specialized"}
+{"text": "课程里的性能测试用的是什么工具", "label": "specialized"}
+{"text": "老师讲的压测报告在课程哪里", "label": "specialized"}
+{"text": "AI学科的课程大纲包括哪些主要模块", "label": "specialized"}
+{"text": "AI大模型学科主要学习哪些技术栈", "label": "specialized"}
+{"text": "Java学科的实战项目有哪些", "label": "specialized"}
+{"text": "大数据学科的核心课程内容是什么", "label": "specialized"}
+{"text": "投满分项目的主要功能模块有哪些", "label": "specialized"}
+{"text": "医疗知识图谱项目用到了哪些关键技术", "label": "specialized"}
+{"text": "AI学科的项目实战环节是怎么安排的", "label": "specialized"}
+{"text": "Java学科的课程设计包含哪些阶段", "label": "specialized"}
+{"text": "大数据学科的实训项目有哪几个", "label": "specialized"}
+{"text": "架构设计课程主要讲哪些内容", "label": "specialized"}
+{"text": "AI学科的作业形式有哪些", "label": "specialized"}
+{"text": "Java课程的考核方式是什么", "label": "specialized"}
+{"text": "大数据课程的结业项目要求是什么", "label": "specialized"}
+{"text": "投满分项目的前后端分别用了什么框架", "label": "specialized"}
+{"text": "医疗知识图谱的数据来源有哪些", "label": "specialized"}
+{"text": "AI大模型课程的实践案例有哪些", "label": "specialized"}
+{"text": "Java学科的课程资源在哪里获取", "label": "specialized"}
+{"text": "大数据课程的答疑时间安排是怎样的", "label": "specialized"}
+{"text": "架构设计课程有配套的源码吗", "label": "specialized"}
+{"text": "AI学科的课件和录播视频在哪里下载", "label": "specialized"}
+{"text": "Java实战项目的小组分工建议是什么", "label": "specialized"}
+{"text": "大数据项目的数据集从哪里获取", "label": "specialized"}
+{"text": "医疗知识图谱的评测指标有哪些", "label": "specialized"}
+{"text": "投满分项目的部署文档在哪里", "label": "specialized"}
+{"text": "AI大模型课程的实验环境怎么配置", "label": "specialized"}
+{"text": "Java课程的代码规范文档有没有", "label": "specialized"}
+{"text": "大数据课程的作业提交截止时间是什么时候", "label": "specialized"}
+{"text": "架构课程的复习资料什么时候发布", "label": "specialized"}
+{"text": "AI学科的考试范围包含哪些章节", "label": "specialized"}
+{"text": "Java实战项目的评分标准是什么", "label": "specialized"}
+{"text": "大数据实训的答辩流程是怎样的", "label": "specialized"}
+{"text": "医疗知识图谱项目的难点在哪里", "label": "specialized"}
+{"text": "投满分项目的技术选型理由是什么", "label": "specialized"}
+{"text": "AI大模型课程的预习材料有哪些", "label": "specialized"}
+{"text": "Java课程的答疑群里常见问题有哪些", "label": "specialized"}
+{"text": "大数据课程的实验指导书在哪里", "label": "specialized"}
+{"text": "架构课程的课程设计题目有哪些", "label": "specialized"}
+{"text": "AI学科的拓展阅读材料推荐哪些", "label": "specialized"}
+{"text": "Java项目的开发文档模板在哪里", "label": "specialized"}
+{"text": "大数据项目的成果展示形式是什么", "label": "specialized"}
+{"text": "我们课程里的 speculative decoding 实战怎么跑", "label": "specialized"}
+{"text": "课程里的 vLLM 部署案例在哪个章节", "label": "specialized"}
+{"text": "老师演示的 continuous batching 实现在哪里", "label": "specialized"}
+{"text": "我们实战里的 RAG pipeline 代码在哪", "label": "specialized"}
+{"text": "课程里的向量数据库用的是 qdrant 还是 milvus", "label": "specialized"}
+{"text": "实战项目里的 embedding 模型用的是哪个", "label": "specialized"}
+{"text": "我们课程里的 langchain 实战在哪里", "label": "specialized"}
+{"text": "课程里的 agent 实战项目是做什么的", "label": "specialized"}
+{"text": "老师演示的 tool calling 案例代码在哪", "label": "specialized"}
+{"text": "我们实战里的 workflow 是用 langraph 实现的吗", "label": "specialized"}
+{"text": "课程里的多轮对话项目怎么管理历史", "label": "specialized"}
+{"text": "实战项目里的 prompt 模板在哪个文件", "label": "specialized"}
+{"text": "我们课程的 function calling 实战用的是什么模型", "label": "specialized"}
+{"text": "课程里的知识库构建流程是什么", "label": "specialized"}
+{"text": "老师讲的 chunk 切分策略在课程哪里", "label": "specialized"}
+{"text": "我们实战里的重排序模型用的是什么", "label": "specialized"}
+{"text": "课程里的混合检索怎么实现的", "label": "specialized"}
+{"text": "实战项目里的问答评测脚本在哪里", "label": "specialized"}
+{"text": "我们课程里的幻觉检测实战怎么做", "label": "specialized"}
+{"text": "课程案例里的 guardrails 是怎么实现的", "label": "specialized"}
+{"text": "我们实战项目的推理服务接口文档在哪", "label": "specialized"}
+{"text": "课程里的大模型评测基准是用什么跑的", "label": "specialized"}
+{"text": "老师说的那个 MMLU 测试脚本在哪里", "label": "specialized"}
+{"text": "我们课程里的红队测试实战是什么", "label": "specialized"}
+{"text": "课程里的 alignment 微调数据从哪来的", "label": "specialized"}
+{"text": "实战里的 DPO 训练数据格式是什么", "label": "specialized"}
+{"text": "我们课程里的 reward model 训练在哪个章节", "label": "specialized"}
+{"text": "课程里的 RLHF 实战用的是什么库", "label": "specialized"}
+{"text": "老师演示的 PPO 训练稳定性技巧是什么", "label": "specialized"}
+{"text": "我们实战项目里的 SFT 数据怎么清洗的", "label": "specialized"}
+{"text": "课程里的指令跟随评测怎么做", "label": "specialized"}
+{"text": "实战项目里的多模态模型用的是什么", "label": "specialized"}
+{"text": "我们课程的视觉语言模型实战在哪里", "label": "specialized"}
+{"text": "课程里的 CLIP 微调案例怎么跑", "label": "specialized"}
+{"text": "老师说的图文匹配项目数据集在哪里", "label": "specialized"}
+{"text": "我们实战里的 OCR 后处理代码在哪", "label": "specialized"}
+{"text": "课程里的语音识别项目用的是 whisper 吗", "label": "specialized"}
+{"text": "实战项目里的 TTS 合成怎么接入的", "label": "specialized"}
+{"text": "我们课程里的多模态对话项目在哪个阶段", "label": "specialized"}
+{"text": "课程里的视频理解实战用的什么框架", "label": "specialized"}
+{"text": "实战里的关键帧提取代码在哪里", "label": "specialized"}
+{"text": "我们课程的三维点云实战有吗", "label": "specialized"}
+{"text": "课程里的 NeRF 项目在哪个章节", "label": "specialized"}
+{"text": "老师演示的 3DGS 实战是什么", "label": "specialized"}
+{"text": "我们实战里的机器人抓取项目用什么仿真器", "label": "specialized"}
+{"text": "课程里的强化学习环境是自己搭的还是用 gym", "label": "specialized"}
+{"text": "实战项目里的奖励函数怎么设计的", "label": "specialized"}
+{"text": "我们课程的 PPO agent 训练代码在哪", "label": "specialized"}
+{"text": "课程里的 DDPG 实战在哪里", "label": "specialized"}
+{"text": "老师讲的多智能体项目是什么场景", "label": "specialized"}
+{"text": "我们实战里的游戏 AI 项目用的什么环境", "label": "specialized"}
+{"text": "课程里的 AlphaZero 实战怎么运行", "label": "specialized"}
+{"text": "实战项目里的 Monte Carlo Tree Search 代码在哪", "label": "specialized"}
+{"text": "我们课程里的推荐系统实战用的什么算法", "label": "specialized"}
+{"text": "课程里的协同过滤项目数据集是什么", "label": "specialized"}
+{"text": "老师演示的 deepfm 实战在哪个章节", "label": "specialized"}
+{"text": "我们实战里的召回排序链路怎么设计的", "label": "specialized"}
+{"text": "课程里的 embedding 召回用的是什么", "label": "specialized"}
+{"text": "实战项目里的 item2vec 代码在哪里", "label": "specialized"}
+{"text": "我们课程里的序列推荐模型是哪个", "label": "specialized"}
+{"text": "课程里的在线学习实战有吗", "label": "specialized"}
+{"text": "实战里的特征工程平台用的是什么", "label": "specialized"}
+{"text": "我们课程里的 ab 实验平台是怎么搭的", "label": "specialized"}
+{"text": "课程案例里的指标体系怎么设计的", "label": "specialized"}
+{"text": "老师说的那个业务指标到模型指标的转化在哪里", "label": "specialized"}
+{"text": "我们实战的点击率预估项目用的是什么", "label": "specialized"}
+{"text": "课程里的转化率优化实战是什么", "label": "specialized"}
+{"text": "实战项目里的留存分析怎么做的", "label": "specialized"}
+{"text": "我们课程里的 LTV 预测实战在哪", "label": "specialized"}
+{"text": "课程里的用户生命周期分析是什么项目", "label": "specialized"}
+{"text": "老师讲的 RFM 模型实战在哪个章节", "label": "specialized"}
+{"text": "我们实战里的流失预警模型怎么做的", "label": "specialized"}
+{"text": "课程里的 uplift modeling 实战有吗", "label": "specialized"}
+{"text": "实战项目里的因果推断怎么做", "label": "specialized"}
+{"text": "我们课程里的双重差分法实战在哪", "label": "specialized"}
+{"text": "课程里的倾向得分匹配项目是什么", "label": "specialized"}
+{"text": "实战里的反事实分析怎么实现", "label": "specialized"}
+{"text": "我们课程的广告出价实战是什么", "label": "specialized"}
+{"text": "课程里的预算分配优化项目在哪", "label": "specialized"}
+{"text": "老师演示的竞价算法是什么", "label": "specialized"}
+{"text": "我们实战里的实时竞价系统怎么设计的", "label": "specialized"}
+{"text": "课程里的 RTB 系统架构是什么", "label": "specialized"}
+{"text": "实战项目里的特征服务怎么建的", "label": "specialized"}
+{"text": "我们课程里的模型服务化方案是什么", "label": "specialized"}
+{"text": "课程里的 feature store 用的是什么", "label": "specialized"}
+{"text": "老师说的模型监控实战在哪里", "label": "specialized"}
+{"text": "我们实战里的数据漂移检测怎么做", "label": "specialized"}
+{"text": "课程里的概念漂移告警方案是什么", "label": "specialized"}
+{"text": "实战项目里的 shadow mode 测试怎么做", "label": "specialized"}
+{"text": "我们课程里的灰度发布方案是什么", "label": "specialized"}
+{"text": "课程里的 canary deployment 怎么实现", "label": "specialized"}
+{"text": "老师演示的蓝绿部署案例在哪里", "label": "specialized"}
+{"text": "我们 Java 课程里的秒杀项目并发多少", "label": "specialized"}
+{"text": "课程里的压测结果在哪里看", "label": "specialized"}
+{"text": "实战项目里的 JMeter 测试脚本在哪", "label": "specialized"}
+{"text": "我们课程的性能优化案例报告在哪", "label": "specialized"}
+{"text": "课程里的 GC 调优实战在哪个章节", "label": "specialized"}
+{"text": "老师说的那个 JVM 参数配置最佳实践在哪", "label": "specialized"}
+{"text": "我们实战里的 thread dump 分析怎么做", "label": "specialized"}
+{"text": "课程里的 heap dump 分析实战是什么", "label": "specialized"}
+{"text": "实战项目里的 arthas 诊断怎么用的", "label": "specialized"}
+{"text": "我们课程里的在线诊断案例有没有", "label": "specialized"}
+{"text": "课程里的链路追踪告警怎么配置的", "label": "specialized"}
+{"text": "老师讲的 SLA 保障方案在课程哪里", "label": "specialized"}
+{"text": "我们实战里的容量规划怎么做的", "label": "specialized"}
+{"text": "课程里的混沌工程实践有吗", "label": "specialized"}
+{"text": "实战项目里的故障注入是怎么做的", "label": "specialized"}
+{"text": "我们课程里的高可用方案是什么", "label": "specialized"}
+{"text": "课程里的同城双活架构是什么", "label": "specialized"}
+{"text": "老师演示的异地多活方案在哪里", "label": "specialized"}
+{"text": "我们实战里的 RPO 和 RTO 目标是什么", "label": "specialized"}
+{"text": "课程里的灾备演练怎么做的", "label": "specialized"}
+{"text": "实战项目里的数据备份方案是什么", "label": "specialized"}
+{"text": "我们课程里的安全加固实战有吗", "label": "specialized"}
+{"text": "课程里的 OWASP Top 10 实战案例在哪", "label": "specialized"}
+{"text": "老师说的 SQL 注入防御案例在哪个项目", "label": "specialized"}
+{"text": "我们实战里的 XSS 防护怎么实现的", "label": "specialized"}
+{"text": "课程里的 CSRF token 实战怎么做", "label": "specialized"}
+{"text": "实战项目里的敏感数据加密在哪里", "label": "specialized"}
+{"text": "我们课程里的权限绑定最小原则怎么实现", "label": "specialized"}
+{"text": "课程里的 OAuth2 授权服务实战在哪", "label": "specialized"}
+{"text": "老师讲的零信任架构在课程哪里", "label": "specialized"}
+{"text": "我们实战里的 API 安全网关怎么配置", "label": "specialized"}
+{"text": "课程里的速率限制实战是怎么做的", "label": "specialized"}
+{"text": "实战项目里的 bot 防护方案是什么", "label": "specialized"}
+{"text": "我们课程里的风控规则引擎实战在哪", "label": "specialized"}
+{"text": "课程里的实时风控系统架构是什么", "label": "specialized"}
+{"text": "老师演示的反欺诈模型是什么", "label": "specialized"}
+{"text": "我们大数据课程里的实时数仓架构是什么", "label": "specialized"}
+{"text": "课程里的 lambda 架构和 kappa 架构怎么选的", "label": "specialized"}
+{"text": "实战里的数据湖项目用的是什么格式", "label": "specialized"}
+{"text": "我们课程里的 iceberg 表格式实战在哪", "label": "specialized"}
+{"text": "课程里的 hudi 和 delta lake 怎么对比的", "label": "specialized"}
+{"text": "老师说的数仓建模方法论在哪里", "label": "specialized"}
+{"text": "我们实战里的维度建模怎么做的", "label": "specialized"}
+{"text": "课程里的星型模型和雪花模型案例在哪", "label": "specialized"}
+{"text": "实战项目里的缓慢变化维度怎么处理", "label": "specialized"}
+{"text": "我们课程里的 CDC 方案用的是什么", "label": "specialized"}
+{"text": "课程里的 debezium 实战在哪个章节", "label": "specialized"}
+{"text": "老师讲的 flink cdc 案例怎么运行", "label": "specialized"}
+{"text": "我们实战里的数据质量管控是怎么做的", "label": "specialized"}
+{"text": "课程里的数据校验规则怎么配置", "label": "specialized"}
+{"text": "实战项目里的数据一致性检查脚本在哪", "label": "specialized"}
+{"text": "我们课程里的元数据管理工具是什么", "label": "specialized"}
+{"text": "课程里的数据字典怎么维护", "label": "specialized"}
+{"text": "老师演示的数据资产盘点是什么", "label": "specialized"}
+{"text": "我们实战里的数据权限管控是怎么设计的", "label": "specialized"}
+{"text": "课程里的行级权限和列级权限怎么实现", "label": "specialized"}
+{"text": "实战项目里的数据脱敏策略是什么", "label": "specialized"}
+{"text": "我们课程里的隐私计算实战有吗", "label": "specialized"}
+{"text": "课程里的联邦学习项目怎么跑", "label": "specialized"}
+{"text": "老师说的差分隐私案例在哪个章节", "label": "specialized"}
+{"text": "我们实战里的数据安全合规怎么做", "label": "specialized"}
+{"text": "课程里的 GDPR 合规实践是什么", "label": "specialized"}
+{"text": "实战项目里的数据删除权怎么实现", "label": "specialized"}
+{"text": "我们课程里的数据沿袭追踪是什么", "label": "specialized"}
+{"text": "课程里的 atlas 元数据平台实战在哪", "label": "specialized"}
+{"text": "老师讲的数据治理框架在课程哪里", "label": "specialized"}
+{"text": "我们大数据实战的 kubeflow 怎么用", "label": "specialized"}
+{"text": "课程里的 mlflow 实验管理实战在哪", "label": "specialized"}
+{"text": "实战项目里的模型版本管理怎么做", "label": "specialized"}
+{"text": "我们课程里的 feature 版本管理是什么", "label": "specialized"}
+{"text": "课程里的 model registry 用的是什么", "label": "specialized"}
+{"text": "老师说的 bentoml 部署案例在哪里", "label": "specialized"}
+{"text": "我们实战里的 triton 推理服务怎么配置", "label": "specialized"}
+{"text": "课程里的 model serving 压测怎么做", "label": "specialized"}
+{"text": "实战项目里的推理延迟优化在哪里", "label": "specialized"}
+{"text": "我们课程里的 batch inference 怎么实现", "label": "specialized"}
+{"text": "课程里的异步推理方案是什么", "label": "specialized"}
+{"text": "老师演示的离线批量预测脚本在哪", "label": "specialized"}
+{"text": "我们实战里的在线特征计算怎么做", "label": "specialized"}
+{"text": "课程里的 redis 特征缓存怎么设计的", "label": "specialized"}
+{"text": "实战项目里的特征回填是什么", "label": "specialized"}
+{"text": "我们课程里的训练推理特征一致性怎么保证", "label": "specialized"}
+{"text": "课程里的 training-serving skew 怎么解决", "label": "specialized"}
+{"text": "老师讲的特征工程最佳实践在哪里", "label": "specialized"}
+{"text": "我们 Python 课程里的异步爬虫项目怎么跑", "label": "specialized"}
+{"text": "课程里的 playwright 爬虫实战在哪", "label": "specialized"}
+{"text": "实战项目里的动态渲染页面怎么处理", "label": "specialized"}
+{"text": "我们课程里的 selenium grid 怎么配置", "label": "specialized"}
+{"text": "课程里的 ip 代理池怎么搭建的", "label": "specialized"}
+{"text": "老师说的验证码识别方案在哪里", "label": "specialized"}
+{"text": "我们实战里的 cookie 池怎么维护", "label": "specialized"}
+{"text": "课程里的爬虫调度框架是什么", "label": "specialized"}
+{"text": "实战项目里的 scrapy-redis 怎么用", "label": "specialized"}
+{"text": "我们课程里的分布式爬虫架构是什么", "label": "specialized"}
+{"text": "课程里的反爬对抗案例在哪个章节", "label": "specialized"}
+{"text": "老师演示的 ua 伪装技巧在哪里", "label": "specialized"}
+{"text": "我们实战里的爬虫数据清洗流程是什么", "label": "specialized"}
+{"text": "课程里的正则表达式解析案例在哪", "label": "specialized"}
+{"text": "实战项目里的 xpath 和 css selector 怎么选", "label": "specialized"}
+{"text": "我们课程里的数据解析性能优化是什么", "label": "specialized"}
+{"text": "课程里的 lxml 和 beautifulsoup 对比案例在哪", "label": "specialized"}
+{"text": "老师讲的结构化数据提取实战在哪里", "label": "specialized"}
+{"text": "我们实战里的非结构化数据处理是什么", "label": "specialized"}
+{"text": "课程里的 pdf 解析项目用的是什么库", "label": "specialized"}
+{"text": "实战项目里的 word 文档解析怎么做", "label": "specialized"}
+{"text": "我们课程里的 excel 数据处理实战在哪", "label": "specialized"}
+{"text": "课程里的 pandas 性能优化实战是什么", "label": "specialized"}
+{"text": "老师演示的 dask 并行计算在哪个章节", "label": "specialized"}
+{"text": "我们实战里的 polars 用法课程有讲吗", "label": "specialized"}
+{"text": "课程里的数据框架性能对比在哪里", "label": "specialized"}
+{"text": "实战项目里的内存优化是怎么做的", "label": "specialized"}
+{"text": "我们课程里的 python profiling 实战是什么", "label": "specialized"}
+{"text": "课程里的 cython 加速案例在哪", "label": "specialized"}
+{"text": "老师说的 numba jit 实战在哪里", "label": "specialized"}
+{"text": "我们实战里的 c extension 怎么写", "label": "specialized"}
+{"text": "课程里的 pybind11 案例在哪个章节", "label": "specialized"}
+{"text": "实战项目里的并行计算用的是什么", "label": "specialized"}
+{"text": "我们课程里的 multiprocessing pool 实战是什么", "label": "specialized"}
+{"text": "课程里的进程池和线程池怎么选", "label": "specialized"}
+{"text": "老师讲的 GIL 绕过方案在课程哪里", "label": "specialized"}
+{"text": "我们实战里的 IO 密集和 CPU 密集任务怎么处理的", "label": "specialized"}
+{"text": "课程里的 asyncio 实战项目是什么", "label": "specialized"}
+{"text": "实战项目里的 aiohttp 怎么用的", "label": "specialized"}
+{"text": "我们课程里的异步数据库访问用什么库", "label": "specialized"}
+{"text": "课程里的 motor 异步 mongodb 实战在哪", "label": "specialized"}
+{"text": "老师演示的 tortoise orm 是什么", "label": "specialized"}
+{"text": "我们实战里的连接池配置是怎么做的", "label": "specialized"}
+{"text": "课程里的数据库连接超时处理在哪里", "label": "specialized"}
+{"text": "实战项目里的慢查询日志分析怎么做", "label": "specialized"}
+{"text": "我们课程里的 ORM 选型建议是什么", "label": "specialized"}
+{"text": "课程里的 sqlalchemy 实战在哪个章节", "label": "specialized"}
+{"text": "老师说的数据库迁移工具是什么", "label": "specialized"}
+{"text": "我们实战里的 alembic 怎么用", "label": "specialized"}
+{"text": "课程里的 flyway 和 liquibase 对比是什么", "label": "specialized"}
+{"text": "实战项目里的数据库回滚怎么做", "label": "specialized"}
+{"text": "我们课程里的 zero downtime migration 是什么", "label": "specialized"}
+{"text": "课程里的在线 DDL 怎么操作的", "label": "specialized"}
+{"text": "老师讲的大表加索引实战在哪里", "label": "specialized"}
+{"text": "我们实战里的 pt-online-schema-change 怎么用", "label": "specialized"}
+{"text": "课程里的读写分离实战是怎么配置的", "label": "specialized"}
+{"text": "实战项目里的主从延迟问题怎么处理", "label": "specialized"}
+{"text": "我们课程里的 mycat 和 shardingsphere 怎么选", "label": "specialized"}
+{"text": "课程里的分布式 id 生成方案是什么", "label": "specialized"}
+{"text": "老师演示的雪花算法实战在哪里", "label": "specialized"}
+{"text": "我们实战里的 leaf 发号器怎么部署", "label": "specialized"}
+{"text": "课程里的 uuid 和自增 id 怎么选", "label": "specialized"}
+{"text": "实战项目里的全局唯一 id 怎么保证", "label": "specialized"}
+{"text": "我们课程里的乐观锁实战案例是什么", "label": "specialized"}
+{"text": "课程里的版本号乐观锁怎么实现", "label": "specialized"}
+{"text": "老师说的 cas 乐观锁在哪个项目里", "label": "specialized"}
+{"text": "我们实战里的悲观锁和乐观锁如何选择", "label": "specialized"}
+{"text": "课程里的库存扣减实战方案是什么", "label": "specialized"}
+{"text": "实战项目里的超卖问题老师有几种解法", "label": "specialized"}
+{"text": "我们课程里的限流算法有哪些实战", "label": "specialized"}
+{"text": "课程里的令牌桶和漏桶算法实现在哪", "label": "specialized"}
+{"text": "老师演示的 guava ratelimiter 在哪个项目", "label": "specialized"}
+{"text": "我们实战里的 sentinel 限流规则怎么配", "label": "specialized"}
+{"text": "课程里的自适应限流是什么", "label": "specialized"}
+{"text": "实战项目里的降级策略是怎么设计的", "label": "specialized"}
+{"text": "我们课程里的熔断恢复机制是什么", "label": "specialized"}
+{"text": "课程里的 fallback 方案有哪些", "label": "specialized"}
+{"text": "老师讲的服务降级实战案例在哪里", "label": "specialized"}
+{"text": "我们实战里的弹性设计原则是什么", "label": "specialized"}
+{"text": "课程里的重试策略实战是怎么写的", "label": "specialized"}
+{"text": "实战项目里的指数退避算法代码在哪", "label": "specialized"}
+{"text": "我们课程里的超时传播是怎么做的", "label": "specialized"}
+{"text": "课程里的 context 超时取消实战在哪", "label": "specialized"}
+{"text": "老师说的截止时间传播在哪个项目", "label": "specialized"}
+{"text": "我们课程里的上下文学习实战是什么", "label": "specialized"}
+{"text": "课程里的 few-shot prompting 案例在哪", "label": "specialized"}
+{"text": "老师演示的提示词工程实战在哪个章节", "label": "specialized"}
+{"text": "我们实战里的系统提示词是怎么设计的", "label": "specialized"}
+{"text": "课程里的角色扮演提示词案例在哪", "label": "specialized"}
+{"text": "实战项目里的 CoT 提示词在哪里", "label": "specialized"}
+{"text": "我们课程里的思维链实战效果怎么样", "label": "specialized"}
+{"text": "课程里的 ReAct agent 实战代码在哪", "label": "specialized"}
+{"text": "老师说的那个工具调用实战怎么跑", "label": "specialized"}
+{"text": "我们实战里的 agent 记忆模块怎么做的", "label": "specialized"}
+{"text": "课程里的长期记忆和短期记忆怎么设计", "label": "specialized"}
+{"text": "实战项目里的 session 管理是什么", "label": "specialized"}
+{"text": "我们课程里的多轮对话管理代码在哪", "label": "specialized"}
+{"text": "课程里的对话历史截断策略是什么", "label": "specialized"}
+{"text": "老师讲的 sliding window 上下文在课程哪里", "label": "specialized"}
+{"text": "我们实战里的 summary memory 怎么实现", "label": "specialized"}
+{"text": "课程里的 entity memory 是什么", "label": "specialized"}
+{"text": "实战项目里的知识图谱记忆是什么", "label": "specialized"}
+{"text": "我们课程里的结构化输出实战怎么做", "label": "specialized"}
+{"text": "课程里的 json mode 实战案例在哪", "label": "specialized"}
+{"text": "老师演示的 pydantic 输出解析在哪里", "label": "specialized"}
+{"text": "我们实战里的 instructor 库怎么用", "label": "specialized"}
+{"text": "课程里的输出格式校验代码在哪", "label": "specialized"}
+{"text": "实战项目里的重试解析机制是什么", "label": "specialized"}
+{"text": "我们课程里的幻觉缓解方案是什么", "label": "specialized"}
+{"text": "课程里的自我一致性投票实战在哪", "label": "specialized"}
+{"text": "老师说的验证链是什么在哪个项目", "label": "specialized"}
+{"text": "我们实战里的 RAG 召回质量怎么评估", "label": "specialized"}
+{"text": "课程里的检索评测指标是什么", "label": "specialized"}
+{"text": "实战项目里的 MRR 和 NDCG 怎么算", "label": "specialized"}
+{"text": "我们课程里的重排序实战用了什么模型", "label": "specialized"}
+{"text": "课程里的 cross-encoder 重排序案例在哪", "label": "specialized"}
+{"text": "老师演示的混合搜索实战怎么跑", "label": "specialized"}
+{"text": "我们实战里的 BM25 和向量搜索怎么融合", "label": "specialized"}
+{"text": "课程里的 RRF 融合算法代码在哪", "label": "specialized"}
+{"text": "实战项目里的查询扩展是怎么做的", "label": "specialized"}
+{"text": "我们课程里的 HyDE 假设文档实战是什么", "label": "specialized"}
+{"text": "课程里的多查询检索策略是什么", "label": "specialized"}
+{"text": "老师讲的 step back prompting 在课程哪里", "label": "specialized"}
+{"text": "我们实战里的 decomposition 查询是什么", "label": "specialized"}
+{"text": "课程里的知识库分块策略有哪些", "label": "specialized"}
+{"text": "实战项目里的 semantic chunking 怎么实现", "label": "specialized"}
+{"text": "我们课程里的递归分块代码在哪", "label": "specialized"}
+{"text": "课程里的 parent document retriever 是什么", "label": "specialized"}
+{"text": "老师演示的 multi-vector retrieval 在哪", "label": "specialized"}
+{"text": "我们实战里的 summary indexing 怎么做", "label": "specialized"}
+{"text": "课程里的 RAPTOR 树索引实战有吗", "label": "specialized"}
+{"text": "实战项目里的文档图谱是怎么构建的", "label": "specialized"}
+{"text": "我们课程里的 graph rag 实战在哪里", "label": "specialized"}
+{"text": "课程里的社区摘要是什么在哪里", "label": "specialized"}
+{"text": "老师说的 graphrag 项目怎么跑", "label": "specialized"}
+{"text": "我们实战里的实体关系抽取怎么做", "label": "specialized"}
+{"text": "课程里的 NER 模型用的是什么", "label": "specialized"}
+{"text": "实战项目里的关系三元组提取代码在哪", "label": "specialized"}
+{"text": "我们课程里的知识图谱构建流程是什么", "label": "specialized"}
+{"text": "课程里的 neo4j 实战在哪个章节", "label": "specialized"}
+{"text": "老师演示的图数据库查询实战在哪里", "label": "specialized"}
+{"text": "我们实战里的 cypher 查询怎么写的", "label": "specialized"}
+{"text": "课程里的实体消解是怎么做的", "label": "specialized"}
+{"text": "实战项目里的共指消解代码在哪", "label": "specialized"}
+{"text": "我们课程里的信息抽取项目用什么框架", "label": "specialized"}
+{"text": "课程里的 spacy 实战案例在哪里", "label": "specialized"}
+{"text": "老师说的 stanza 用法在哪个项目", "label": "specialized"}
+{"text": "我们实战里的文本解析流水线是什么", "label": "specialized"}
+{"text": "课程里的 unstructured 库实战在哪", "label": "specialized"}
+{"text": "实战项目里的多语言支持怎么做", "label": "specialized"}
+{"text": "我们课程里的翻译系统实战是什么", "label": "specialized"}
+{"text": "课程里的机器翻译评测怎么做", "label": "specialized"}
+{"text": "老师演示的多语言 BERT 微调在哪里", "label": "specialized"}
+{"text": "我们实战里的语言检测代码在哪", "label": "specialized"}
+{"text": "课程里的跨语言检索实战有吗", "label": "specialized"}
+{"text": "实战项目里的代码搜索是怎么做的", "label": "specialized"}
+{"text": "我们课程里的代码语义搜索实战在哪", "label": "specialized"}
+{"text": "课程里的 code embedding 模型是什么", "label": "specialized"}
+{"text": "老师说的 codebert 实战在哪个章节", "label": "specialized"}
+{"text": "我们实战里的代码补全项目用了什么", "label": "specialized"}
+{"text": "课程里的代码生成评测指标是什么", "label": "specialized"}
+{"text": "实战项目里的 docstring 生成代码在哪", "label": "specialized"}
+{"text": "我们课程里的代码审查 AI 实战是什么", "label": "specialized"}
+{"text": "课程里的自动化测试生成实战在哪", "label": "specialized"}
+{"text": "老师演示的单元测试自动生成怎么跑", "label": "specialized"}
+{"text": "我们实战里的 bug 定位模型是什么", "label": "specialized"}
+{"text": "课程里的代码漏洞检测实战有吗", "label": "specialized"}
+{"text": "实战项目里的静态分析集成怎么做", "label": "specialized"}
+{"text": "我们课程里的 devops 自动化实战在哪", "label": "specialized"}
+{"text": "课程里的 github actions 工作流实战在哪", "label": "specialized"}
+{"text": "老师讲的 argocd 部署实战在哪里", "label": "specialized"}
+{"text": "我们实战里的 helm chart 怎么写的", "label": "specialized"}
+{"text": "课程里的 terraform 基础设施实战在哪", "label": "specialized"}
+{"text": "实战项目里的 pulumi 怎么用的", "label": "specialized"}
+{"text": "我们课程里的 ansible 自动化运维在哪", "label": "specialized"}
+{"text": "课程里的 puppet 和 ansible 对比案例在哪", "label": "specialized"}
+{"text": "老师说的配置管理最佳实践在课程哪里", "label": "specialized"}
+{"text": "我们实战里的环境一致性怎么保证的", "label": "specialized"}
+{"text": "课程里的 nix 包管理实战有吗", "label": "specialized"}
+{"text": "实战项目里的容器镜像安全扫描怎么做", "label": "specialized"}
+{"text": "我们课程里的 trivy 扫描集成在哪", "label": "specialized"}
+{"text": "课程里的 cosign 镜像签名实战在哪", "label": "specialized"}
+{"text": "老师演示的 sbom 生成在哪个章节", "label": "specialized"}
+{"text": "我们实战里的供应链安全实践是什么", "label": "specialized"}
+{"text": "课程里的 devsecops 实战是什么", "label": "specialized"}
+{"text": "实战项目里的渗透测试模拟怎么做", "label": "specialized"}
+{"text": "我们课程里的 sast 和 dast 工具是什么", "label": "specialized"}
+{"text": "课程里的 sonarqube 集成实战在哪", "label": "specialized"}
+{"text": "老师说的代码质量门禁在哪个项目", "label": "specialized"}
+{"text": "我们实战里的技术债务量化怎么做", "label": "specialized"}
+{"text": "课程里的架构适应度函数是什么", "label": "specialized"}
+{"text": "实战项目里的测试覆盖率目标是多少", "label": "specialized"}
+{"text": "我们课程里的变异测试实战有吗", "label": "specialized"}
+{"text": "课程里的 pitest 工具怎么用的", "label": "specialized"}
+{"text": "老师演示的契约测试在哪里", "label": "specialized"}
+{"text": "我们实战里的 pact 测试怎么写", "label": "specialized"}
+{"text": "课程里的 consumer driven contract 是什么", "label": "specialized"}
+{"text": "实战项目里的服务虚拟化怎么做", "label": "specialized"}
+{"text": "我们课程里的 wiremock 实战在哪", "label": "specialized"}
+{"text": "课程里的 mock server 配置在哪里", "label": "specialized"}
+{"text": "老师说的测试环境管理在课程哪里", "label": "specialized"}
+{"text": "我们实战里的测试数据管理是什么", "label": "specialized"}
+{"text": "课程里的测试数据工厂代码在哪", "label": "specialized"}
+{"text": "实战项目里的数据库 fixture 怎么管理", "label": "specialized"}
+{"text": "我们课程里的 testcontainers 实战在哪", "label": "specialized"}
+{"text": "课程里的集成测试环境隔离怎么做", "label": "specialized"}
+{"text": "老师演示的 e2e 测试框架是什么", "label": "specialized"}
+{"text": "我们实战里的 cypress 实战在哪个章节", "label": "specialized"}
+{"text": "课程里的 playwright 测试代码在哪", "label": "specialized"}
+{"text": "实战项目里的视觉回归测试怎么做", "label": "specialized"}
+{"text": "我们课程里的 storybook 实战有吗", "label": "specialized"}
+{"text": "课程里的前端组件测试是怎么做的", "label": "specialized"}
+{"text": "老师讲的 vitest 和 jest 对比在哪里", "label": "specialized"}
+{"text": "我们实战里的前端单测覆盖率目标是多少", "label": "specialized"}
+{"text": "课程里的 react testing library 实战在哪", "label": "specialized"}
+{"text": "实战项目里的 mock service worker 怎么用", "label": "specialized"}
+{"text": "我们课程里的 api 测试自动化在哪", "label": "specialized"}
+{"text": "课程里的 postman 自动化测试实战在哪", "label": "specialized"}
+{"text": "老师说的 karate 测试框架在哪个项目", "label": "specialized"}
+{"text": "我们实战里的性能测试基线是什么", "label": "specialized"}
+{"text": "课程里的 k6 性能测试实战在哪", "label": "specialized"}
+{"text": "实战项目里的 gatling 脚本在哪里", "label": "specialized"}
+{"text": "我们课程里的压测报告分析怎么做", "label": "specialized"}
+{"text": "课程里的 apdex 指标是什么在哪里", "label": "specialized"}
+{"text": "老师演示的 p99 延迟分析在哪里", "label": "specialized"}
+{"text": "我们实战里的性能基准测试框架是什么", "label": "specialized"}
+{"text": "课程里的 jmh 基准测试实战在哪", "label": "specialized"}
+{"text": "实战项目里的 benchmark 结果在哪里", "label": "specialized"}
+{"text": "我们课程里的内存泄漏排查实战是什么", "label": "specialized"}
+{"text": "课程里的 eclipse mat 怎么用的", "label": "specialized"}
+{"text": "老师说的 jconsole 监控实战在哪", "label": "specialized"}
+{"text": "我们实战里的 jstack 分析案例在哪", "label": "specialized"}
+{"text": "课程里的 gc 日志分析实战是什么", "label": "specialized"}
+{"text": "实战项目里的 gc easy 工具怎么用", "label": "specialized"}
+{"text": "我们课程里的内存分析报告在哪里", "label": "specialized"}
+{"text": "课程里的 allocation profiling 怎么做", "label": "specialized"}
+{"text": "老师演示的对象存活分析在哪里", "label": "specialized"}
+{"text": "我们实战里的 heap 大小调优是怎么做的", "label": "specialized"}
+{"text": "课程里的 metaspace 溢出排查在哪", "label": "specialized"}
+{"text": "实战项目里的类加载器泄漏怎么排查", "label": "specialized"}
+{"text": "我们课程里的线程泄漏检测实战在哪", "label": "specialized"}
+{"text": "课程里的连接池泄漏排查案例是什么", "label": "specialized"}
+{"text": "老师说的资源泄漏检测工具在哪里", "label": "specialized"}
+{"text": "我们实战里的 FD 泄漏排查是什么", "label": "specialized"}
+{"text": "课程里的网络连接泄漏怎么诊断", "label": "specialized"}
+{"text": "实战项目里的 TIME_WAIT 问题怎么处理", "label": "specialized"}
+{"text": "我们课程里的 socket 调优实战在哪", "label": "specialized"}
+{"text": "课程里的 tcp keepalive 配置在哪里", "label": "specialized"}
+{"text": "老师演示的网络性能调优案例在哪", "label": "specialized"}
+{"text": "我们实战里的 zero copy 技术怎么用", "label": "specialized"}
+{"text": "课程里的 sendfile 实战案例在哪", "label": "specialized"}
+{"text": "实战项目里的 mmap 怎么用的", "label": "specialized"}
+{"text": "我们课程里的 io_uring 实战有吗", "label": "specialized"}
+{"text": "课程里的异步 io 框架对比在哪里", "label": "specialized"}
+{"text": "老师说的 proactor 模式实战在哪", "label": "specialized"}
+{"text": "我们实战里的事件驱动架构是什么", "label": "specialized"}
+{"text": "课程里的 event loop 实现在哪个章节", "label": "specialized"}
+{"text": "实战项目里的消息驱动架构代码在哪", "label": "specialized"}
+{"text": "我们课程里的 actor model 实战有吗", "label": "specialized"}
+{"text": "课程里的 akka 实战案例在哪里", "label": "specialized"}
+{"text": "老师演示的 vertx 实战在哪里", "label": "specialized"}
+{"text": "我们实战里的响应式微服务是什么", "label": "specialized"}
+{"text": "课程里的 quarkus 框架实战在哪", "label": "specialized"}
+{"text": "实战项目里的 micronaut 怎么用的", "label": "specialized"}
+{"text": "我们课程里的 graalvm native image 实战在哪", "label": "specialized"}
+{"text": "课程里的 AOT 编译实战是什么", "label": "specialized"}
+{"text": "老师说的 substrate vm 在课程哪里", "label": "specialized"}
+{"text": "我们实战里的启动时间优化是什么", "label": "specialized"}
+{"text": "课程里的 serverless java 实战在哪", "label": "specialized"}
+{"text": "实战项目里的冷启动优化是怎么做的", "label": "specialized"}
+{"text": "我们课程里的 lambda 函数实战在哪", "label": "specialized"}
+{"text": "课程里的 aws lambda 部署在哪个章节", "label": "specialized"}
+{"text": "老师演示的 azure function 实战在哪", "label": "specialized"}
+{"text": "我们实战里的函数即服务是什么", "label": "specialized"}
+{"text": "课程里的 knative 实战案例在哪里", "label": "specialized"}
+{"text": "实战项目里的事件触发函数怎么写", "label": "specialized"}
+{"text": "我们课程里的 cloudnative 实践是什么", "label": "specialized"}
+{"text": "课程里的 12-factor app 实战案例在哪", "label": "specialized"}
+{"text": "老师讲的云原生架构最佳实践在哪里", "label": "specialized"}
+{"text": "我们实战里的 operator 模式怎么实现", "label": "specialized"}
+{"text": "课程里的 custom resource 定义在哪", "label": "specialized"}
+{"text": "实战项目里的 controller 怎么写的", "label": "specialized"}
+{"text": "我们课程里的 admission webhook 实战有吗", "label": "specialized"}
+{"text": "课程里的 k8s 扩展 API 怎么开发", "label": "specialized"}
+{"text": "老师演示的 crd 案例代码在哪里", "label": "specialized"}
+{"text": "我们实战里的 operator sdk 怎么用", "label": "specialized"}
+{"text": "课程里的 kubebuilder 实战在哪个章节", "label": "specialized"}
+{"text": "实战项目里的 reconcile loop 怎么写", "label": "specialized"}
+{"text": "我们课程里的 k8s 网络插件实战有吗", "label": "specialized"}
+{"text": "课程里的 cni 插件是什么在哪里", "label": "specialized"}
+{"text": "老师说的 calico 网络策略实战在哪", "label": "specialized"}
+{"text": "我们实战里的 service mesh 接入是什么", "label": "specialized"}
+{"text": "课程里的 istio 流量管理实战在哪", "label": "specialized"}
+{"text": "实战项目里的 envoy filter 怎么写", "label": "specialized"}
+{"text": "我们课程里的 kiali 可视化实战在哪", "label": "specialized"}
+{"text": "课程里的 jaeger 链路追踪集成在哪", "label": "specialized"}
+{"text": "老师演示的 opentelemetry 实战在哪里", "label": "specialized"}
+{"text": "我们实战里的指标采集方案是什么", "label": "specialized"}
+{"text": "课程里的 openmetrics 格式是什么", "label": "specialized"}
+{"text": "实战项目里的 alertmanager 怎么配置", "label": "specialized"}
+{"text": "我们课程里的 oncall 流程实战有吗", "label": "specialized"}
+{"text": "课程里的 runbook 自动化是什么", "label": "specialized"}
+{"text": "老师说的 SRE 实践在课程哪里", "label": "specialized"}
+{"text": "我们实战里的 SLO 怎么定义的", "label": "specialized"}
+{"text": "课程里的 error budget 概念是什么", "label": "specialized"}
+{"text": "实战项目里的可观测性三支柱是什么", "label": "specialized"}
+{"text": "我们课程里的日志聚合方案是什么", "label": "specialized"}
+{"text": "课程里的 loki 实战在哪个章节", "label": "specialized"}
+{"text": "老师演示的 tempo 分布式追踪在哪里", "label": "specialized"}
+{"text": "我们实战里的 grafana stack 怎么搭", "label": "specialized"}
+{"text": "课程里的 dashboard 告警规则怎么写", "label": "specialized"}
+{"text": "实战项目里的异常检测模型怎么集成", "label": "specialized"}
+{"text": "我们课程里的智能告警实战是什么", "label": "specialized"}
+{"text": "课程里的 aiops 实践在哪里", "label": "specialized"}
+{"text": "老师讲的根因分析自动化在课程哪里", "label": "specialized"}
+{"text": "我们实战里的故障预测模型是什么", "label": "specialized"}
+{"text": "课程里的容量预测实战案例在哪", "label": "specialized"}
+{"text": "实战项目里的自愈系统怎么实现的", "label": "specialized"}
+{"text": "我们课程里的混沌工程工具是什么", "label": "specialized"}
+{"text": "课程里的 chaosblade 实战在哪里", "label": "specialized"}
+{"text": "老师演示的 chaos mesh 案例在哪", "label": "specialized"}
+{"text": "我们实战里的故障演练方案是什么", "label": "specialized"}
+{"text": "课程里的游戏日 gameday 怎么组织的", "label": "specialized"}
+{"text": "实战项目里的压力测试场景是什么", "label": "specialized"}
+{"text": "我们课程里的容灾切换实战是什么", "label": "specialized"}
+{"text": "课程里的 DNS 故障注入怎么做", "label": "specialized"}
+{"text": "老师说的网络分区模拟在哪里", "label": "specialized"}
+{"text": "我们实战里的磁盘故障模拟是什么", "label": "specialized"}
+{"text": "课程里的内存压力测试怎么做", "label": "specialized"}
+{"text": "实战项目里的 kill -9 恢复测试是什么", "label": "specialized"}
+{"text": "我们课程里的 Chaos engineering 工具是什么", "label": "specialized"}
+{"text": "实战项目的监控大盘如何搭建", "label": "specialized"}
+{"text": "老师演示的 DORA 指标分析在哪", "label": "specialized"}
+{"text": "我们实战里的部署频率怎么统计", "label": "specialized"}
+{"text": "课程里的变更失败率怎么度量", "label": "specialized"}
+{"text": "实战项目里的 MTTR 如何缩短", "label": "specialized"}
+{"text": "我们课程里的工程效能度量是什么", "label": "specialized"}
+{"text": "课程里的 cycle time 分析实战在哪", "label": "specialized"}
+{"text": "老师说的 lead time 优化案例在哪", "label": "specialized"}
+{"text": "我们实战里的 value stream mapping 是什么", "label": "specialized"}
+{"text": "课程里的精益看板实战是什么", "label": "specialized"}
+{"text": "实战项目里的看板限制 WIP 怎么做", "label": "specialized"}
+{"text": "我们课程里的 scrum 实践是什么", "label": "specialized"}
+{"text": "课程里的 sprint review 怎么做", "label": "specialized"}
+{"text": "老师讲的 retrospective 方法在哪里", "label": "specialized"}
+{"text": "我们实战里的 OKR 设定是什么", "label": "specialized"}
+{"text": "课程里的技术 roadmap 怎么制定", "label": "specialized"}
+{"text": "实战项目里的架构评审流程是什么", "label": "specialized"}
+{"text": "我们课程里的 RFC 模板在哪里", "label": "specialized"}
+{"text": "课程里的 ADR 架构决策记录是什么", "label": "specialized"}
+{"text": "老师演示的技术方案评审在哪里", "label": "specialized"}
+{"text": "我们实战里的代码分层规范是什么", "label": "specialized"}
+{"text": "课程里的 clean code 实践案例在哪", "label": "specialized"}
+{"text": "实战项目里的命名规范是什么", "label": "specialized"}
+{"text": "我们课程里的注释规范是什么", "label": "specialized"}
+{"text": "课程里的 api 命名规范在哪里", "label": "specialized"}
+{"text": "老师说的 restful 设计规范案例在哪", "label": "specialized"}
+{"text": "我们实战里的 graphql 接口设计是什么", "label": "specialized"}
+{"text": "课程里的 api versioning 策略是什么", "label": "specialized"}
+{"text": "实战项目里的向后兼容怎么保证", "label": "specialized"}
+{"text": "我们课程里的 deprecation 策略是什么", "label": "specialized"}
+{"text": "课程里的 semantic versioning 实践在哪", "label": "specialized"}
+{"text": "老师讲的 changelog 维护方法在哪里", "label": "specialized"}
+{"text": "我们实战里的 release note 模板在哪", "label": "specialized"}
+{"text": "课程里的 feature flag 实战是什么", "label": "specialized"}
+{"text": "实战项目里的 unleash 平台怎么用", "label": "specialized"}
+{"text": "我们课程里的功能开关实践案例在哪", "label": "specialized"}
+{"text": "课程里的 trunk-based development 实战在哪", "label": "specialized"}
+{"text": "老师演示的 feature branch 策略在哪", "label": "specialized"}
+{"text": "我们实战里的 gitflow 是怎么用的", "label": "specialized"}
+{"text": "课程里的 monorepo 实践有吗", "label": "specialized"}
+{"text": "实战项目里的 nx 工具怎么用的", "label": "specialized"}
+{"text": "我们课程里的 turborepo 实战在哪", "label": "specialized"}
+{"text": "课程里的 pnpm workspace 怎么配置", "label": "specialized"}
+{"text": "老师说的包版本管理策略在哪里", "label": "specialized"}
+{"text": "我们实战里的私有 npm 仓库是什么", "label": "specialized"}
+{"text": "课程里的 nexus 仓库管理实战在哪", "label": "specialized"}
+{"text": "实战项目里的 artifactory 怎么用的", "label": "specialized"}
+{"text": "我们课程里的制品管理策略是什么", "label": "specialized"}
+{"text": "课程里的二进制制品签名是什么", "label": "specialized"}
+{"text": "老师演示的 cosign 实战在哪里", "label": "specialized"}
+{"text": "我们实战里的镜像仓库是什么", "label": "specialized"}
+{"text": "课程里的 harbor 镜像仓库实战在哪", "label": "specialized"}
+{"text": "实战项目里的镜像清理策略是什么", "label": "specialized"}
+{"text": "我们课程里的镜像安全扫描怎么做", "label": "specialized"}
+{"text": "课程里的 clair 扫描集成在哪里", "label": "specialized"}
+{"text": "老师说的 aqua security 在哪个项目", "label": "specialized"}
+{"text": "我们实战里的合规检查自动化是什么", "label": "specialized"}
+{"text": "课程里的 open policy agent 实战在哪", "label": "specialized"}
+{"text": "实战项目里的策略即代码是什么", "label": "specialized"}
+{"text": "我们课程里的 conftest 工具怎么用", "label": "specialized"}
+{"text": "课程里的 kyverno 策略实战在哪", "label": "specialized"}
+{"text": "老师演示的准入控制实战在哪里", "label": "specialized"}
+{"text": "我们实战里的资源配额管理是什么", "label": "specialized"}
+{"text": "课程里的 limit range 怎么配置的", "label": "specialized"}
+{"text": "实战项目里的 resource quota 案例在哪", "label": "specialized"}
+{"text": "我们课程里的成本优化实战是什么", "label": "specialized"}
+{"text": "课程里的 kubecost 使用实战在哪", "label": "specialized"}
+{"text": "老师说的云成本分析方法在课程哪里", "label": "specialized"}
+{"text": "我们实战里的 spot instance 使用是什么", "label": "specialized"}
+{"text": "课程里的抢占式实例最佳实践在哪", "label": "specialized"}
+{"text": "实战项目里的 auto scaling 策略是什么", "label": "specialized"}
+{"text": "我们课程里的 HPA 和 VPA 怎么配置", "label": "specialized"}
+{"text": "课程里的 KEDA 事件驱动扩缩容实战在哪", "label": "specialized"}
+{"text": "老师演示的自定义指标扩缩容在哪里", "label": "specialized"}
+{"text": "我们实战里的节点亲和性怎么设置", "label": "specialized"}
+{"text": "课程里的 pod 调度策略是什么", "label": "specialized"}
+{"text": "实战项目里的 taint 和 toleration 怎么用", "label": "specialized"}
+{"text": "我们课程里的 gpu 调度实战是什么", "label": "specialized"}
+{"text": "课程里的 gpu 资源限制怎么配置", "label": "specialized"}
+{"text": "老师说的 time-slicing gpu 在哪个章节", "label": "specialized"}
+{"text": "我们实战里的 mig 分区是什么", "label": "specialized"}
+{"text": "课程里的 gpu 利用率监控怎么做", "label": "specialized"}
+{"text": "实战项目里的 dcgm 监控集成在哪", "label": "specialized"}
+{"text": "我们课程里的 gpu 集群管理是什么", "label": "specialized"}
+{"text": "课程里的 ray 分布式计算实战在哪", "label": "specialized"}
+{"text": "老师演示的 ray train 实战在哪里", "label": "specialized"}
+{"text": "我们实战里的 ray serve 部署是什么", "label": "specialized"}
+{"text": "课程里的 ray tune 超参搜索实战在哪", "label": "specialized"}
+{"text": "实战项目里的 ray data 怎么用的", "label": "specialized"}
+{"text": "我们课程里的 spark on kubernetes 实战在哪", "label": "specialized"}
+{"text": "课程里的 flink on k8s 部署在哪个章节", "label": "specialized"}
+{"text": "老师说的 volcano 任务调度实战在哪", "label": "specialized"}
+{"text": "我们实战里的 Kubeflow Pipelines 怎么用", "label": "specialized"}
+{"text": "课程里的 argo workflows 实战在哪里", "label": "specialized"}
+{"text": "实战项目里的 prefect 工作流怎么用", "label": "specialized"}
+{"text": "我们课程里的 metaflow 实战有吗", "label": "specialized"}
+{"text": "课程里的 zenml 工具怎么用的", "label": "specialized"}
+{"text": "老师演示的 vertex ai pipelines 在哪里", "label": "specialized"}
+{"text": "我们实战里的 sagemaker 实战是什么", "label": "specialized"}
+{"text": "课程里的 bedrock 实战案例在哪", "label": "specialized"}
+{"text": "实战项目里的 azure ml 怎么用的", "label": "specialized"}
+{"text": "我们课程里的 hugging face hub 实战在哪", "label": "specialized"}
+{"text": "课程里的 spaces 部署案例在哪里", "label": "specialized"}
+{"text": "老师说的 gradio 实战在哪个章节", "label": "specialized"}
+{"text": "我们实战里的 streamlit 项目代码在哪", "label": "specialized"}
+{"text": "课程里的 chainlit 实战在哪里", "label": "specialized"}
+{"text": "实战项目里的对话界面怎么搭建", "label": "specialized"}
+{"text": "我们课程里的 openwebui 部署实战在哪", "label": "specialized"}
+{"text": "课程里的 lobe-chat 配置案例在哪", "label": "specialized"}
+{"text": "老师演示的 privateGPT 实战在哪里", "label": "specialized"}
+{"text": "我们实战里的本地大模型部署是什么", "label": "specialized"}
+{"text": "课程里的 ollama 实战在哪个章节", "label": "specialized"}
+{"text": "实战项目里的 llama.cpp 怎么用的", "label": "specialized"}
+{"text": "我们课程里的量化部署实战是什么", "label": "specialized"}
+{"text": "课程里的 gguf 格式实战在哪里", "label": "specialized"}
+{"text": "老师说的模型格式转换在哪个项目", "label": "specialized"}
+{"text": "我们实战里的 quantization 方案是什么", "label": "specialized"}
+{"text": "课程里的 exllamav2 推理实战在哪", "label": "specialized"}
+{"text": "实战项目里的 llm 基准测试怎么跑", "label": "specialized"}
+{"text": "我们课程里的 lm evaluation harness 实战在哪", "label": "specialized"}
+{"text": "课程里的 openai evals 框架怎么用", "label": "specialized"}
+{"text": "老师演示的自定义评测集怎么构建", "label": "specialized"}
+{"text": "我们实战里的 human eval 自动化是什么", "label": "specialized"}
+{"text": "课程里的 MT-bench 评测在哪里", "label": "specialized"}
+{"text": "实战项目里的对话质量评估是什么", "label": "specialized"}
+{"text": "我们课程里的 G-eval 框架实战在哪", "label": "specialized"}
+{"text": "课程里的 prometheus 评测实战有吗", "label": "specialized"}
+{"text": "老师说的 ragas 评测框架在哪里", "label": "specialized"}
+{"text": "我们实战里的 RAG 评测指标是什么", "label": "specialized"}
+{"text": "课程里的忠实度和相关性怎么评测", "label": "specialized"}
+{"text": "实战项目里的上下文召回评测是什么", "label": "specialized"}
+{"text": "我们课程里的上下文压缩策略是什么", "label": "specialized"}
+{"text": "实战项目里的 prompt caching 怎么实现", "label": "specialized"}
+{"text": "课程里的 KV cache 复用实战在哪", "label": "specialized"}
+{"text": "老师演示的推理成本优化方案在哪里", "label": "specialized"}
+{"text": "我们课程里的 RAG 知识库是怎么构建的", "label": "specialized"}
+{"text": "老师说的 Contextual RAG 是什么，在哪里实现的", "label": "specialized"}
+{"text": "课程里的 BGE-M3 嵌入模型怎么加载", "label": "specialized"}
+{"text": "实战项目里的 Milvus 集合是怎么设计的", "label": "specialized"}
+{"text": "我们项目的 hybrid search 是怎么实现的", "label": "specialized"}
+{"text": "课程里的 WeightedRanker 权重是怎么设置的", "label": "specialized"}
+{"text": "老师演示的 BGE-Reranker 精排流程在哪个文件", "label": "specialized"}
+{"text": "实战里的 RAG 置信度阈值是多少，在哪里配置", "label": "specialized"}
+{"text": "我们课程的 RAG 项目用了几个向量索引", "label": "specialized"}
+{"text": "课程里的文档分块策略是什么", "label": "specialized"}
+{"text": "实战项目的 PDF 解析用的是什么库", "label": "specialized"}
+{"text": "我们的 RAG 系统里 dense 和 sparse 向量是怎么融合的", "label": "specialized"}
+{"text": "课程里为什么用 MiniLM 做意图分类", "label": "specialized"}
+{"text": "实战里的 RAG 问答走 SSE 流式吗，在哪实现", "label": "specialized"}
+{"text": "老师讲的 Milvus 单集合多租户方案是什么", "label": "specialized"}
+{"text": "我们项目里的 BGE-M3 稀疏向量是怎么存进 Milvus 的", "label": "specialized"}
+{"text": "课程里的知识库写入脚本叫什么", "label": "specialized"}
+{"text": "实战里的 Reranker 是怎么判断置信度的", "label": "specialized"}
+{"text": "我们 RAG 项目里文档更新时怎么做幂等写入", "label": "specialized"}
+{"text": "课程里的 query_classifier 是怎么微调的", "label": "specialized"}
+{"text": "实战项目里 RAG 检索不到时怎么兜底的", "label": "specialized"}
+{"text": "我们的知识库项目里 init_milvus.py 做了什么", "label": "specialized"}
+{"text": "老师演示的 build_knowledge_base.py 分几步", "label": "specialized"}
+{"text": "课程里的 Contextual RAG 上下文是怎么生成的", "label": "specialized"}
+{"text": "实战项目里的 encode_query 返回什么格式", "label": "specialized"}
+{"text": "我们课程里 RAG 的 top-k 参数在哪里配置", "label": "specialized"}
+{"text": "课程里的 AnnSearchRequest 是怎么用的", "label": "specialized"}
+{"text": "实战中的 knowledge_base.py 对外暴露了哪些方法", "label": "specialized"}
+{"text": "我们项目里 RAG 召回候选数量是多少", "label": "specialized"}
+{"text": "课程里的 MarkdownHeaderTextSplitter 在哪个步骤用", "label": "specialized"}
+{"text": "实战里的 HNSW 索引参数 M 和 efConstruction 是多少", "label": "specialized"}
+{"text": "我们的 RAG 系统里 tenant_id 是怎么做过滤的", "label": "specialized"}
+{"text": "课程里的稀疏索引 drop_ratio_build 是多少", "label": "specialized"}
+{"text": "实战项目里意图识别分几类，分别是什么", "label": "specialized"}
+{"text": "老师说的 Web 搜索兜底是用哪个 API 的", "label": "specialized"}
+{"text": "我们课程里 RAG 的记忆压缩超过几轮触发", "label": "specialized"}
+{"text": "课程里的 BGE-M3 为什么禁用 MPS fp16", "label": "specialized"}
+{"text": "实战里的 chunk_id 是怎么生成的", "label": "specialized"}
+{"text": "我们项目里的 source_name 字段是做什么用的", "label": "specialized"}
+{"text": "课程里的 MilvusClient 和旧版 Collection 有什么区别", "label": "specialized"}
+{"text": "实战项目里 RAG 系统的 SSE 事件格式是什么", "label": "specialized"}
+{"text": "我们课程里的 QA Agent 用了哪个 LangGraph 节点顺序", "label": "specialized"}
+{"text": "课程里的 retrieve 方法返回的 RetrievalResult 有哪些字段", "label": "specialized"}
+{"text": "实战里的 Semaphore 并发数是多少，用在哪里", "label": "specialized"}
+{"text": "我们项目的 RAG 系统支持哪些文件格式", "label": "specialized"}
+{"text": "课程里的 Multi-Query 改写是怎么做的", "label": "specialized"}
+{"text": "实战中的 HyDE 生成假设文档在哪个节点实现", "label": "specialized"}
+{"text": "我们课程里的 MCP Server 是做什么的", "label": "specialized"}
+{"text": "老师演示的知识库 MCP 工具有哪些接口", "label": "specialized"}
+{"text": "实战项目里的 web_search_server.py 用了哪个搜索接口", "label": "specialized"}
+{"text": "我们课程里 LangGraph 图的节点顺序是怎么设计的", "label": "specialized"}
+{"text": "我们课程里的 Agent 系统是用 LangGraph 构建的吗", "label": "specialized"}
+{"text": "老师讲的 StateGraph 和 AgentExecutor 有什么区别", "label": "specialized"}
+{"text": "实战里的 MemorySaver 是怎么按 Agent 隔离的", "label": "specialized"}
+{"text": "我们项目里的 HitL 是怎么实现的", "label": "specialized"}
+{"text": "课程里的 interrupt() 在哪个节点调用", "label": "specialized"}
+{"text": "实战项目里的 Command(resume=...) 是用来做什么的", "label": "specialized"}
+{"text": "我们课程的四大 Agent 分别是什么", "label": "specialized"}
+{"text": "老师演示的简历审查 Agent 有几个并行维度", "label": "specialized"}
+{"text": "实战里的简历评分六个维度分别是什么", "label": "specialized"}
+{"text": "我们项目里的试卷批改 Agent 支持哪些题型", "label": "specialized"}
+{"text": "课程里的模拟面试 Agent 是怎么设计对话状态的", "label": "specialized"}
+{"text": "实战中的 Orchestrator 是怎么路由不同 Agent 的", "label": "specialized"}
+{"text": "我们课程里 Agent 的三层兜底机制是什么", "label": "specialized"}
+{"text": "老师说的 with_structured_output 为什么要加 method='function_calling'", "label": "specialized"}
+{"text": "实战里的 LLMFactory 是怎么统一管理模型的", "label": "specialized"}
+{"text": "我们项目里的 get_llm 函数在哪里定义", "label": "specialized"}
+{"text": "课程里的 DeepSeek 模型是怎么配置 base_url 的", "label": "specialized"}
+{"text": "实战项目里 init_chat_model 的 model_provider 是什么", "label": "specialized"}
+{"text": "我们课程里的 retry.py 支持几次重试", "label": "specialized"}
+{"text": "老师讲的 AgentFallbackHandler 在什么情况下触发", "label": "specialized"}
+{"text": "实战里的系统兜底响应是怎么处理的", "label": "specialized"}
+{"text": "我们项目里 with_retry 装饰器怎么使用", "label": "specialized"}
+{"text": "课程里的 thread_id 格式是什么", "label": "specialized"}
+{"text": "实战里的 qa_sessions 表存了哪些字段", "label": "specialized"}
+{"text": "我们课程里对话摘要是什么时候触发压缩的", "label": "specialized"}
+{"text": "老师演示的 memory.py 是怎么初始化 MemorySaver 的", "label": "specialized"}
+{"text": "实战项目里的 Node 节点是怎么注册进 StateGraph 的", "label": "specialized"}
+{"text": "我们课程里的条件边路由逻辑在哪个文件", "label": "specialized"}
+{"text": "课程里的 QAState 有哪些字段", "label": "specialized"}
+{"text": "实战里的 load_memory_and_embed 节点做了什么", "label": "specialized"}
+{"text": "我们项目里的 generate_rag_node 是怎么流式输出的", "label": "specialized"}
+{"text": "老师说的 save_memory_node 保存的是什么", "label": "specialized"}
+{"text": "实战中的双轨评估面试 Agent 是怎么实现的", "label": "specialized"}
+{"text": "我们课程里的 Orchestrator 怎么判断走哪个 Agent", "label": "specialized"}
+{"text": "课程里的 unified_chat 接口是做什么用的", "label": "specialized"}
+{"text": "实战项目里 LangGraph 图是在哪里编译的", "label": "specialized"}
+{"text": "我们课程里的 Agent 图编译时为什么不传 interrupt_before", "label": "specialized"}
+{"text": "老师演示的三轨并行批改是什么意思", "label": "specialized"}
+{"text": "实战里的 Send API 在批改 Agent 里怎么用的", "label": "specialized"}
+{"text": "我们项目里 prompts.py 里有哪些模板", "label": "specialized"}
+{"text": "课程里的 DeepSeek-Coder 用在哪个 Agent 里", "label": "specialized"}
+{"text": "实战项目里的 structured_llm 是怎么绑定输出结构的", "label": "specialized"}
+{"text": "我们课程里的批改状态流转有哪几个阶段", "label": "specialized"}
+{"text": "老师讲的 exam_reviews 表里有哪些字段", "label": "specialized"}
+{"text": "实战中的面试评分是怎么做双轨对比的", "label": "specialized"}
+{"text": "我们课程里的 interview_sessions 表结构是什么", "label": "specialized"}
+{"text": "课程里的 pending_review 状态是什么时候进入的", "label": "specialized"}
+{"text": "实战项目里 HitL 人工审核接口是什么", "label": "specialized"}
+{"text": "我们电商项目里的商品分类模型是怎么训练的", "label": "specialized"}
+{"text": "老师演示的电商推荐系统用了哪种协同过滤", "label": "specialized"}
+{"text": "实战里的商品搜索是基于向量检索还是关键词检索", "label": "specialized"}
+{"text": "我们课程里的电商评价情感分析是怎么实现的", "label": "specialized"}
+{"text": "课程里的用户行为序列模型在哪个章节讲的", "label": "specialized"}
+{"text": "实战项目里的商品详情页推荐算法是什么", "label": "specialized"}
+{"text": "我们电商项目里的订单状态机是怎么设计的", "label": "specialized"}
+{"text": "老师说的电商冷启动问题是怎么解决的", "label": "specialized"}
+{"text": "课程里的商品多级分类树是怎么存储的", "label": "specialized"}
+{"text": "实战里的用户画像特征是怎么构建的", "label": "specialized"}
+{"text": "我们电商项目里的实时推荐是用什么框架实现的", "label": "specialized"}
+{"text": "课程里的商品 Embedding 是怎么训练的", "label": "specialized"}
+{"text": "实战项目里的购物车和订单数据库表是怎么设计的", "label": "specialized"}
+{"text": "我们课程里的电商促销活动规则引擎在哪里", "label": "specialized"}
+{"text": "老师演示的商品评论爬取脚本在哪个文件", "label": "specialized"}
+{"text": "课程里的电商库存管理是怎么防超卖的", "label": "specialized"}
+{"text": "实战里的商品图文多模态检索是怎么实现的", "label": "specialized"}
+{"text": "我们电商项目里的用户留存分析脚本在哪", "label": "specialized"}
+{"text": "课程里的价格预测模型用的是什么算法", "label": "specialized"}
+{"text": "实战项目里的商品标签自动打标逻辑在哪里", "label": "specialized"}
+{"text": "我们课程里电商 A/B 测试框架是怎么设计的", "label": "specialized"}
+{"text": "老师讲的电商漏斗分析模型在哪个模块", "label": "specialized"}
+{"text": "课程里的商品相似度计算用的是余弦相似度吗", "label": "specialized"}
+{"text": "实战里的电商 DAU/MAU 统计是怎么实现的", "label": "specialized"}
+{"text": "我们课程里的电商知识图谱是怎么构建的", "label": "specialized"}
+{"text": "老师演示的商品描述自动生成是用哪个模型", "label": "specialized"}
+{"text": "课程里的电商搜索词纠错功能怎么实现的", "label": "specialized"}
+{"text": "实战项目里的用户分群是用什么聚类算法", "label": "specialized"}
+{"text": "我们电商课程里的风控规则引擎在哪个文件", "label": "specialized"}
+{"text": "课程里的商品类目预测准确率是多少", "label": "specialized"}
+{"text": "实战里的电商商品去重逻辑是怎么做的", "label": "specialized"}
+{"text": "我们课程里的电商用户意图识别模型怎么训练", "label": "specialized"}
+{"text": "老师说的电商流量预测模型在哪里实现", "label": "specialized"}
+{"text": "课程里的商品点击率预估 CTR 模型是哪种", "label": "specialized"}
+{"text": "实战项目里的电商供应链管理模块在哪里", "label": "specialized"}
+{"text": "我们课程里的商品评分系统是怎么设计的", "label": "specialized"}
+{"text": "老师讲的电商多渠道数据融合怎么实现的", "label": "specialized"}
+{"text": "课程里的购物意图预测在什么场景触发", "label": "specialized"}
+{"text": "实战里的商品属性抽取是用 NER 还是规则", "label": "specialized"}
+{"text": "我们课程里的电商实时竞价模型是什么算法", "label": "specialized"}
+{"text": "课程里的商品主图质量检测是怎么做的", "label": "specialized"}
+{"text": "实战项目里的用户购买转化模型在哪里训练", "label": "specialized"}
+{"text": "我们电商课程里的智能客服机器人是怎么接入的", "label": "specialized"}
+{"text": "老师演示的商品问答系统用了 RAG 吗", "label": "specialized"}
+{"text": "课程里的电商 LLM 应用场景有哪些", "label": "specialized"}
+{"text": "实战里的商品评论摘要生成是用什么模型", "label": "specialized"}
+{"text": "我们电商项目里的多模态商品理解是怎么实现的", "label": "specialized"}
+{"text": "老师说的个性化搜索排序是怎么做的", "label": "specialized"}
+{"text": "课程里的 RAG 系统怎么处理多轮对话上下文", "label": "specialized"}
+{"text": "实战里的 QA Agent 记忆摘要是用 DeepSeek 压缩的吗", "label": "specialized"}
+{"text": "我们课程里的 RAG 问答节点有几个", "label": "specialized"}
+{"text": "老师讲的 RAG 低置信度时怎么走 Web 搜索兜底", "label": "specialized"}
+{"text": "课程里的 EduAgent 整体架构图在哪里", "label": "specialized"}
+{"text": "实战里的四大 Agent 是共用一个 LLM 实例吗", "label": "specialized"}
+{"text": "我们课程里的 FastAPI 接口是怎么注册 Router 的", "label": "specialized"}
+{"text": "老师演示的 SSE 推流格式是什么样的", "label": "specialized"}
+{"text": "课程里的 JWT 鉴权中间件在哪里挂载", "label": "specialized"}
+{"text": "实战里的 agent_type 有哪些取值", "label": "specialized"}
+{"text": "我们课程里的 PostgreSQL 建表脚本叫什么", "label": "specialized"}
+{"text": "课程里的多租户隔离是靠 tenant_id 实现的吗", "label": "specialized"}
+{"text": "实战项目里的 migrations.py 是怎么幂等执行的", "label": "specialized"}
+{"text": "我们课程里的 RAG 系统是如何处理 PDF 的", "label": "specialized"}
+{"text": "老师说的 BGE-M3 dense 和 sparse 维度分别是多少", "label": "specialized"}
+{"text": "课程里的 HNSW 建图参数是怎么选的", "label": "specialized"}
+{"text": "实战里的 Milvus 是用 docker-compose 启动的吗", "label": "specialized"}
+{"text": "我们课程里的 PostgreSQL 端口为什么不是默认的 5432", "label": "specialized"}
+{"text": "老师演示的 seed_data.py 初始化了哪些测试数据", "label": "specialized"}
+{"text": "课程里的 Langfuse 集成是可选的吗", "label": "specialized"}
+{"text": "实战项目里的 verify_env.py 检查了哪些依赖", "label": "specialized"}
+{"text": "我们课程里的 conda 环境名叫什么", "label": "specialized"}
+{"text": "老师讲的 langchain==1.2.10 为什么要锁版本", "label": "specialized"}
+{"text": "课程里的 init_chat_model 为什么不能用 deepseek/ 前缀", "label": "specialized"}
+{"text": "实战里的 MCP 知识库服务器在哪个文件", "label": "specialized"}
+{"text": "我们课程里的 RAG 项目 Milvus 端口是多少", "label": "specialized"}
+{"text": "老师说的 EduAgent 支持哪些国产大模型", "label": "specialized"}
+{"text": "课程里的 operation_logs 表记录了什么信息", "label": "specialized"}
+{"text": "实战里的异步 SQLAlchemy 是怎么配置连接池的", "label": "specialized"}
+{"text": "我们课程里的 RAG Agent 怎么做多路召回的", "label": "specialized"}
+{"text": "老师演示的电商项目评论数据是从哪里获取的", "label": "specialized"}
+{"text": "课程里的电商商品分类任务用了几层神经网络", "label": "specialized"}
+{"text": "实战里的 Agent 结果为什么要持久化到数据库", "label": "specialized"}
+{"text": "我们课程里面试 Agent 的打分维度有哪些", "label": "specialized"}
+{"text": "老师说的简历 Agent 是并行还是串行打分的", "label": "specialized"}
+{"text": "课程里的 BGE-Reranker 加载失败时怎么降级", "label": "specialized"}
+{"text": "实战项目里的 config.py 里有哪些必填项", "label": "specialized"}
+{"text": "我们课程里的 LangGraph 版本是多少", "label": "specialized"}
+{"text": "老师讲的 pydantic-settings 是怎么读取 .env.local 的", "label": "specialized"}
+{"text": "课程里的 AsyncSessionLocal 是在哪里创建的", "label": "specialized"}
+{"text": "实战里的 bcrypt 密码加密在哪里用的", "label": "specialized"}
+{"text": "我们课程里的 RAG 分块大小默认是多少", "label": "specialized"}
+{"text": "老师说的 document_id 为什么是幂等更新的键", "label": "specialized"}
+{"text": "课程里的 SparseFLOATVector 是什么格式存进 Milvus 的", "label": "specialized"}
+{"text": "实战项目里的 QA 问答接口是 POST 还是 GET", "label": "specialized"}
+{"text": "我们课程里的 Agent 图是在 lifespan 里初始化的吗", "label": "specialized"}
+{"text": "老师演示的 EduAgent 前端框架是 Vue3 吗", "label": "specialized"}
+{"text": "课程里的电商 Agent 是如何处理用户投诉的", "label": "specialized"}
+{"text": "实战里的商品问答 Agent 用的是 RAG 还是直接 LLM", "label": "specialized"}
+{"text": "我们电商课程里的 LLM 推荐理由生成是怎么做的", "label": "specialized"}
+{"text": "老师说的电商项目 Agent 编排是 LangGraph 还是 LangChain", "label": "specialized"}
+{"text": "课程里的客服 Agent 怎么判断要不要转人工", "label": "specialized"}
+{"text": "实战项目里的电商多轮对话状态是怎么保存的", "label": "specialized"}
