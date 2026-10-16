@@ -96,7 +96,7 @@ async def web_search(
     # 优先 Tavily，失败后降级 DuckDuckGo
     if settings.tavily_api_key:
         try:
-            results = await _search_tavily(query, max_results, settings.tavily_api_key)
+            results = await _search_tavily(query, max_results,settings.tavily_api_key)
             logger.info("web_search_mcp.tavily_done", hits=len(results))
             return results
         except Exception as e:
