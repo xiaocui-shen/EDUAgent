@@ -356,27 +356,3 @@ QA 和面试的 SSE 接口直连 `http://localhost:8000`，不经过 Vite proxy�
 批改为后台异步任务，刷新页面可获取最新状态。若超过 15 分钟未完成，记录将自动标记为 `failed`，可重新提交。
 
 ---
-
-## 配套课件
-
-完整学习课件位于 https://my.feishu.cn/wiki/YshHwcwiPivoVMkhB1ncujsfnyd，共 10 章：
-
-| 章节 | 内容 |
-|------|------|
-| 第一章 | 项目简介与 Agent 核心概念 |
-| 第二章 | 工具介绍（async / Pydantic / LangChain / LangGraph / FastAPI）|
-| 第三章 | 环境搭建与工程地基 |
-| 第四章 | 简历审查 Agent |
-| 第五章 | RAG 智能问答系统 |
-| 第六章 | 试卷批改 Agent（含 HitL）|
-| 第七章 | 模拟面试 Agent |
-| 第八章 | 系统集成与编排 |
-| 第九章 | 集成前端和观测系统 |
-| 第十章 | 回顾、能力迁移与面试题集 |
-
----
-
-## License
-
-本项目仅供教学使用，未经授权不得用于商业目的。  
-© 黑马程序员
